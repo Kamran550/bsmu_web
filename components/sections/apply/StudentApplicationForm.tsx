@@ -366,7 +366,7 @@ export default function StudentApplicationForm({
                                   >
                                     {program.name}
                                     {program.price_per_year &&
-                                      ` - $${program.price_per_year}/year`}
+                                      ` - € ${program.price_per_year}/year`}
                                   </SelectItem>
                                 ))}
                               </SelectContent>

@@ -30,19 +30,34 @@
     "apply": "Başvur"
   },
   "hero": {
-    "title": "Dünya Standartlarında Eğitimle Geleceğinizi Şekillendirin",
-    "subtitle": "Küresel öğrenci topluluğuna katılın ve yarının lideri olmak için gerekli becerileri kazanın. 2025 Güz dönemi başvuruları şimdi açık.",
-    "primaryButton": "Şimdi Başvur",
-    "secondaryButton": "Programları Keşfet"
+    "title": "Bilim ve Yönetimde Mükemmellikle Geleceğinizi Dönüştürün",
+    "subtitle": "Yenilik ve liderliğe adanmış canlı bir akademik topluluğa katılın. BSMU'da yolculuğunuza başlayın ve potansiyelinizi keşfedin. 2025 Güz dönemi başvuruları şimdi açık.",
+    "primaryButton": "Başvurunu Başlat",
+    "secondaryButton": "Programlarımızı Keşfet",
+    "badge": "2025 Güz Dönemi Başvuruları Açıldı",
+    "stats": {
+      "yearsExperience": "İllik Təcrübə",
+      "excellence": "Mükemmellik",
+      "countries": "Ölkə",
+      "students": "Tələbələr"
+    },
+    "cards": {
+      "academic": "Akademik",
+      "academicExcellence": "Mükemmellik",
+      "innovation": "İnnovasiya",
+      "andLeadership": "və Liderlik"
+    }
   },
   "aboutPreview": {
-    "title": "Hakkımızda",
-    "description": "Avrupa Uluslararası Barış Üniversitesi (EIPU), eğitim ve küresel anlayış yoluyla barışı teşvik etmeye adanmış yenilikçi bir yüksek öğretim kurumudur. Öğrencilerimize dünyada olumlu değişiklikler yaratmak için gerekli bilgi ve becerileri sağlıyoruz.",
-    "button": "Daha Fazla Bilgi"
+    "title": "BSMU'ya Hoş Geldiniz",
+    "description": "Balkan Bilim ve Yönetim Üniversitesi, titiz bilimsel eğitimi yenilikçi yönetim uygulamalarıyla birleştiren akademik mükemmelliğin bir simgesi olarak duruyor. Kurumumuz, öğrencileri küresel zorluklarla başa çıkmaya hazır ileri görüşlü profesyoneller olmalarını sağlıyor.",
+    "button": "Daha Fazla Keşfet",
+    "badge": "Akademik Mükemmellik",
+    "yearsExperience": "25+ İllik Təcrübə"
   },
   "statistics": {
-    "title": "Rakamlarla Etkimiz",
-    "subtitle": "Kaliteli eğitim ve küresel ortaklıklar yoluyla mükemmellik inşa ediyoruz",
+    "title": "BSMU Rakamlarla",
+    "subtitle": "Başarı, yenilik ve küresel erişimle ölçülen mükemmellik",
     "students": "Öğrenci",
     "countries": "Ülke",
     "programs": "Program",
@@ -58,11 +73,41 @@
     "title": "Öğrencilerimiz Ne Diyor",
     "subtitle": "Mezunlarımızdan başarı hikayeleri"
   },
+  "features": {
+    "title": "Neden BSMU'yu Seçmelisiniz",
+    "subtitle": "Bilim ve yönetim eğitiminde bizi önde gelen bir kurum yapan şeyleri keşfedin",
+    "academicExcellence": {
+      "title": "Akademik Mükemmellik",
+      "description": "Dünya standartlarında eğitim almanızı sağlamak için sektör uzmanları ve deneyimli akademisyenler tarafından tasarlanmış titiz müfredat."
+    },
+    "globalNetwork": {
+      "title": "Küresel Ağ",
+      "description": "Dünyanın dört bir yanından öğrenci ve profesyonellerle bağlantı kurun, ömür boyu sürecek uluslararası ilişkiler kurun."
+    },
+    "diverseCommunity": {
+      "title": "Çeşitli Topluluk",
+      "description": "Farklı bakış açılarının öğrenme deneyiminizi ve kişisel gelişiminizi zenginleştirdiği çok kültürlü bir ortama katılın."
+    },
+    "recognizedDegrees": {
+      "title": "Tanınmış Dereceler",
+      "description": "Dünya çapında kariyer fırsatlarının kapılarını açan uluslararası tanınmış nitelikler kazanın."
+    },
+    "modernFacilities": {
+      "title": "Modern Tesisler",
+      "description": "En son teknolojiyle donatılmış son teknoloji laboratuvarlar, kütüphaneler ve öğrenme alanlarında eğitim alın."
+    },
+    "careerSupport": {
+      "title": "Kariyer Desteği",
+      "description": "Yolculuğunuz boyunca kapsamlı kariyer hizmetleri, stajlar ve işe yerleştirme yardımından yararlanın."
+    }
+  },
   "cta": {
-    "title": "Geleceğinize Yatırım Yapın",
-    "description": "Küresel liderlerin yetiştiği üniversiteye katılın. Başvuru süreci basit ve hızlıdır.",
+    "title": "Akademik Yolculuğunuza Bugün Başlayın",
+    "description": "BSMU'da dönüştürücü bir eğitime doğru ilk adımı atın. Basitleştirilmiş başvuru sürecimiz geleceğinize başlamayı kolaylaştırır.",
     "button": "Şimdi Başvur",
-    "learnMore": "Daha Fazla Bilgi"
+    "learnMore": "Programları Keşfet",
+    "deadlineTitle": "Müraciət Tarixi",
+    "applicationsOpen": "Müraciətlər açıqdır"
   },
   "language": {
     "en": "English",
@@ -71,7 +116,7 @@
   },
   "about": {
     "hero": {
-      "title": "Avrupa Uluslararası Barış Üniversitesi Hakkında",
+      "title": "Balkan Bilim ve Yönetim Üniversitesi Hakkında",
       "subtitle": "Eğitim ve küresel işbirliği yoluyla zihinleri güçlendirmek, barış inşa etmek ve yarının liderlerini şekillendirmek."
     },
     "missionVision": {
@@ -83,7 +128,7 @@
       },
       "vision": {
         "title": "Vizyonumuz",
-        "description": "Akademik mükemmellik, yenilikçi araştırma ve barış eğitimine bağlılığımızla tanınan önde gelen uluslararası üniversite olmak. Eğitimin farklılıkları kapattığı, anlayış yarattığı ve herkes için sürdürülebilir gelecekler inşa ettiği bir dünya hayal ediyoruz."
+        "description": "Akademik mükemmellik, yenilikçi araştırma ve bilim ve yönetim eğitimine bağlılığımızla tanınan önde gelen uluslararası üniversite olmak. Eğitimin farklılıkları kapattığı, anlayış yarattığı ve herkes için sürdürülebilir gelecekler inşa ettiği bir dünya hayal ediyoruz."
       },
       "coreValues": {
         "title": "Temel Değerler",
@@ -98,7 +143,7 @@
     },
     "values": {
       "title": "Değerlerimiz",
-      "subtitle": "EIPU'da yaptığımız her şeyi yönlendiren ilkeler",
+      "subtitle": "BSMU'da yaptığımız her şeyi yönlendiren ilkeler",
       "items": {
         "academicExcellence": {
           "title": "Akademik Mükemmellik",
@@ -132,7 +177,7 @@
       "milestones": {
         "2020": {
           "title": "Kuruluş",
-          "description": "Avrupa Uluslararası Barış Üniversitesi, barış eğitimi ve küresel vatandaşlığa adanmış dünya standartlarında bir kurum yaratma vizyonuyla kuruldu."
+          "description": "Balkan Bilim ve Yönetim Üniversitesi, barış eğitimi ve küresel vatandaşlığa adanmış dünya standartlarında bir kurum yaratma vizyonuyla kuruldu."
         },
         "2021": {
           "title": "İlk Mezunlar",
@@ -140,7 +185,7 @@
         },
         "2022": {
           "title": "Uluslararası Tanınma",
-          "description": "EIPU akreditasyon aldı ve dünya çapında önde gelen üniversitelerle ortaklıklar kurarak küresel erişimimizi genişletti."
+          "description": "BSMU akreditasyon aldı ve dünya çapında önde gelen üniversitelerle ortaklıklar kurarak küresel erişimimizi genişletti."
         },
         "2023": {
           "title": "Genişleme",
@@ -155,11 +200,11 @@
         "fullName": "Ad Soyad",
         "position": "Pozisyon",
         "fullNameValue": "Prof. Dr. Serdar Koral",
-        "positionValue": "Avrupa Uluslararası Barış Üniversitesi (EIPU) Rektörü",
-        "description": "Prof. Dr. Serdar Koral, uluslararası saygın bir akademisyen, yüksek öğretim lideri ve barış odaklı öğrenme savunucusudur. Kıtalar arası yirmi yılı aşkın bir kariyere sahip olan Koral, Avrupa Uluslararası Barış Üniversitesi'ne (EIPU) akademik mükemmellik, küresel vizyon ve sosyal sorumluluk sahibi liderlerin bir sonraki neslini şekillendirme konusunda derin bir bağlılık getirmektedir.",
+        "positionValue": "Balkan Bilim ve Yönetim Üniversitesi (BSMU) Rektörü",
+        "description": "Prof. Dr. Serdar Koral, uluslararası saygın bir akademisyen, yüksek öğretim lideri ve bilim ve yönetim eğitiminde mükemmellik savunucusudur. Kıtalar arası yirmi yılı aşkın bir kariyere sahip olan Koral, Balkan Bilim ve Yönetim Üniversitesi'ne (BSMU) akademik mükemmellik, küresel vizyon ve sosyal sorumluluk sahibi liderlerin bir sonraki neslini şekillendirme konusunda derin bir bağlılık getirmektedir.",
         "qualifications": "Dr. Koral, barış ve çatışma çalışmaları, küresel diplomasi ve kültürlerarası iletişim alanlarında uzmanlaşmış Siyaset Bilimi ve Uluslararası İlişkiler alanında doktora derecesine sahiptir. Avrupa, Orta Asya ve Orta Doğu'daki tanınmış kurumlarda akademik ve idari pozisyonlar almıştır. Akademik yolculuğu, yüksek öğretimde diyalog, eleştirel düşünme ve etik liderliği teşvik etmeye odaklanmıştır.",
         "email": "E-posta",
-        "emailValue": "serdar.koral@eipu.edu.pl"
+        "emailValue": "serdar.koral@bsmu.edu.rs"
       },
       "welcomeMessage": {
         "title": "Rektörden Hoş Geldiniz Mesajı",
@@ -183,28 +228,28 @@
       "viceRector": {
         "position": "Rektör Yardımcısı",
         "name": "Marlene Treiblach",
-        "email": "marlene.treiblach@eipu.edu.pl"
+        "email": "marlene.treiblach@bsmu.edu.rs"
       },
       "rectorAdvisor": {
         "position": "Rektör Danışmanı",
         "name": "Milena Zaworska",
-        "email": "milena.zaworska@eipu.edu.pl"
+        "email": "milena.zaworska@bsmu.edu.rs"
       },
       "secretaryGeneral": {
         "position": "Genel Sekreter",
         "name": "Martin Dravoski",
-        "email": "martin.dravoski@eipu.edu.pl"
+        "email": "martin.dravoski@bsmu.edu.rs"
       }
     }
   },
   "fees": {
     "hero": {
-      "title": "Öğrenim Ücretleri ve Ödeme Planları",
-      "subtitle": "Esnek ödeme seçenekleri ile uygun fiyatlı eğitim. Kaliteli eğitimi erişilebilir kılmak için tasarlanmış rekabetçi öğrenim ücretlerimizi, ödeme planlarımızı ve burs fırsatlarımızı keşfedin."
+      "title": "Geleceğinize Yatırım",
+      "subtitle": "Eğitiminiz için şeffaf ve esnek finansman seçenekleri. Akademik yolculuğunuzu desteklemek için tasarlanmış rekabetçi öğrenim yapımızı, uygun ödeme planlarını ve kapsamlı burs programlarını keşfedin."
     },
     "priceTable": {
-      "title": "Program Ücretleri",
-      "subtitle": "Tüm akademik programlarımız için şeffaf fiyatlandırma",
+      "title": "Öğrenim Yapısı",
+      "subtitle": "Tüm derece programlarında net ve rekabetçi fiyatlandırma",
       "mostPopular": "En Popüler",
       "year": "/yıl",
       "total": "Toplam",
@@ -260,8 +305,8 @@
       }
     },
     "paymentPlans": {
-      "title": "Esnek Ödeme Planları",
-      "subtitle": "Size en uygun ödeme planını seçin. Eğitimi uygun fiyatlı hale getirmek için çeşitli seçenekler sunuyoruz.",
+      "title": "Ödeme Seçenekleri",
+      "subtitle": "Mali durumunuza uygun ödeme planını seçin. İhtiyaçlarınıza uygun birden fazla esnek plan mevcuttur.",
       "recommended": "Önerilen",
       "off": "İndirim",
       "customTerms": "Özel Şartlar",
@@ -310,8 +355,8 @@
       }
     },
     "scholarships": {
-      "title": "Burslar ve Mali Yardım",
-      "subtitle": "Eğitiminizi daha uygun fiyatlı hale getirmek için çeşitli burslar sunuyoruz. Burs fırsatlarımızı keşfedin.",
+      "title": "Mali Destek ve Burslar",
+      "subtitle": "Akademik hedeflerinizi desteklemek için kapsamlı mali yardım programları. Mevcut burs fırsatlarını ve finansman seçeneklerini keşfedin.",
       "coverage": "Kapsam",
       "eligibility": "Uygunluk",
       "applicationDeadline": "Başvuru Son Tarihi",
@@ -465,7 +510,9 @@
   "news": {
     "hero": {
       "title": "Haberler ve Güncellemeler",
-      "subtitle": "Avrupa Uluslararası Barış Üniversitesi'ndeki en son haberler, etkinlikler, duyurular ve başarılar hakkında bilgi sahibi olun."
+      "subtitle": "Balkan Bilim ve Yönetim Üniversitesi'ndeki en son haberler, etkinlikler, duyurular ve başarılar hakkında bilgi sahibi olun.",
+      "latestUpdates": "Son Güncellemeler",
+      "stayInformed": "Bilgili Kalın"
     },
     "grid": {
       "featuredNews": "Öne Çıkan Haberler",
@@ -492,7 +539,7 @@
     },
     "newsletter": {
       "title": "Güncel Kalın",
-      "description": "Bültenimize abone olun ve EIPU'dan önemli haberleri, etkinlikleri ve güncellemeleri kaçırmayın.",
+      "description": "Bültenimize abone olun ve BSMU'dan önemli haberleri, etkinlikleri ve güncellemeleri kaçırmayın.",
       "emailPlaceholder": "E-posta adresinizi girin",
       "subscribe": "Abone Ol",
       "thankYou": "Abone olduğunuz için teşekkürler!",
@@ -511,7 +558,10 @@
   "contact": {
     "hero": {
       "title": "İletişime Geçin",
-      "subtitle": "Yardımcı olmaya hazırız! Aşağıdaki kanallardan herhangi biri ile bizimle iletişime geçin. Ekibimiz sorularınızı yanıtlamaya ve eğitim yolculuğunuzda size yardımcı olmaya hazırdır."
+      "subtitle": "Yardımcı olmaya hazırız! Aşağıdaki kanallardan herhangi biri ile bizimle iletişime geçin. Ekibimiz sorularınızı yanıtlamaya ve eğitim yolculuğunuzda size yardımcı olmaya hazırdır.",
+      "badge": "İletişime Geçin",
+      "quickResponse": "Hızlı Yanıt",
+      "helpAvailable": "Yardım Elimizin Altında"
     },
     "info": {
       "title": "İletişime Geçin",
@@ -568,12 +618,12 @@
     }
   },
   "footer": {
-    "description": "Avrupa Uluslararası Barış Üniversitesi - Eğitim, barış ve kültürü birleştiren uluslararası bir üniversite.",
+    "description": "Balkan Bilim ve Yönetim Üniversitesi - Eğitim, barış ve kültürü birleştiren uluslararası bir üniversite.",
     "quickLinks": "Hızlı Bağlantılar",
     "contact": "İletişim",
     "university": "Üniversite",
     "phoneNumbers": {
-      "poland": "Polonya",
+      "serbia": "Sırbistan",
       "azerbaijan": "Azerbaycan",
       "luxembourg": "Luxembourg",
       "germany": "Almanya",
@@ -594,13 +644,13 @@
       "studentLife": "Öğrenci Yaşamı",
       "admissions": "Kabul"
     },
-    "copyright": "© {year} Avrupa Uluslararası Barış Üniversitesi. Tüm hakları saklıdır.",
+    "copyright": "© {year} Balkan Bilim ve Yönetim Üniversitesi. Tüm hakları saklıdır.",
     "privacyPolicy": "Gizlilik Politikası",
     "termsOfService": "Hizmet Şartları"
   },
   "apply": {
     "hero": {
-      "title": "EIPU'ya Başvurun",
+      "title": "BSMU'ya Başvurun",
       "subtitle": "Akademik yolculuğunuza bizimle başlayın. Derece programınızı seçin ve başvurunuzu bugün başlatın."
     },
     "applicantType": {
@@ -664,8 +714,8 @@
       "identification": "Kimlik",
       "passportNumber": "Kimlik Belgesi Seri Numarası",
       "passportNumberPlaceholder": "örn., c4776hjbde987",
-      "photoId": "Kimlik Belgesi Kopyası (resim/pdf)",
-      "profilePhoto": "Profil Fotoğrafı (resim)",
+      "photoId": "Pasaport (resim/pdf)",
+      "profilePhoto": "Fotoğraf (resim)",
       "address": "Adres",
       "country": "Ülke",
       "city": "Şehir",
@@ -675,10 +725,10 @@
       "transcript": "Lise Transkripti (jpg/pdf)",
       "highSchoolDiploma": "Lise Diploması (jpg/pdf)",
       "highSchoolTranscript": "Lise Transkripti (jpg/pdf)",
-      "bachelorDiploma": "Bakalavr Diplomu (jpg/pdf)",
-      "bachelorTranscript": "Bakalavr Akademik Transkripti (jpg/pdf)",
-      "masterDiploma": "Magistr Diplomu (jpg/pdf)",
-      "masterTranscript": "Magistr Akademik Transkripti (jpg/pdf)",
+      "bachelorDiploma": "Lisans Diploma (jpg/pdf)",
+      "bachelorTranscript": "Lisans Akademik Transkript (jpg/pdf)",
+      "masterDiploma": "Yüsek Lisans Diploma (jpg/pdf)",
+      "masterTranscript": "Yüksek Lisans Akademik Transkript (jpg/pdf)",
       "programChoice": "Program Seçimi",
       "faculty": "Fakülte",
       "required": "Zorunlu alan",

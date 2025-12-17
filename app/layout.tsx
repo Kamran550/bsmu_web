@@ -15,44 +15,44 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   // Əsas məlumatlar
   title: {
-    default: "EIPU - European International Peace University | Study in Poland",
-    template: "%s | EIPU - European International Peace University",
+    default: "BSMU - Balkan Science and Management University | Study in Serbia",
+    template: "%s | BSMU - Balkan Science and Management University",
   },
   description:
-    "EIPU - European International Peace University. International education in Poland with bachelor's, master's and PhD programs. Quality education through peace and global understanding.",
+    "BSMU - Balkan Science and Management University. International education in Serbia with bachelor's, master's and PhD programs. Quality education through science and management.",
 
   // Açar sözlər
   keywords: [
-    "EIPU",
-    "eipu",
-    "European International Peace University",
-    "eipu.edu.pl",
-    "Poland university",
-    "Polish university",
-    "international university Poland",
+    "BSMU",
+    "bsmu",
+    "Balkan Science and Management University",
+    "bsmu.edu.rs",
+    "Serbia university",
+    "Serbian university",
+    "international university Serbia",
     "international university",
-    "peace university",
-    "European university",
-    "study in Poland",
-    "education in Poland",
-    "PhD Poland",
-    "PhD in Poland",
-    "bachelor degree Poland",
-    "bachelor programs in Poland",
-    "master degree Poland",
-    "master programs in Poland",
-    "doctoral programs in Poland",
+    "science and management university",
+    "Serbian university",
+    "study in Serbia",
+    "education in Serbia",
+    "PhD Serbia",
+    "PhD in Serbia",
+    "bachelor degree Serbia",
+    "bachelor programs in Serbia",
+    "master degree Serbia",
+    "master programs in Serbia",
+    "doctoral programs in Serbia",
   ],
 
   // Müəllif və yaradıcı
   authors: [
     {
-      name: "European International Peace University",
-      url: "https://eipu.edu.pl",
+      name: "Balkan Science and Management University",
+      url: "https://bsmu.edu.rs",
     },
   ],
-  creator: "EIPU - European International Peace University",
-  publisher: "European International Peace University",
+  creator: "Balkan Science and Management University",
+  publisher: "Balkan Science and Management University",
 
   // Robots
   robots: {
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   },
 
   // Canonical URL
-  metadataBase: new URL("https://eipu.edu.pl"),
+  metadataBase: new URL("https://bsmu.edu.rs"),
   alternates: {
     canonical: "/",
     languages: {
@@ -83,17 +83,17 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     alternateLocale: ["ru_RU", "tr_TR"],
-    url: "https://eipu.edu.pl",
-    siteName: "EIPU - European International Peace University",
-    title: "EIPU - European International Peace University | Study in Poland",
+    url: "https://bsmu.edu.rs",
+    siteName: "Balkan Science and Management University",
+    title: "Balkan Science and Management University | Study in Serbia",
     description:
-      "EIPU - European International Peace University. International education in Poland with bachelor's, master's and PhD programs. Quality education through peace and global understanding.",
+      "Balkan Science and Management University. International education in Serbia with bachelor's, master's and PhD programs. Quality education through science and management.",
     images: [
       {
-        url: "/images/EIPU-logo-tam.jpg",
+        url: "/images/BSMU-logo-dark.png",
         width: 1200,
         height: 630,
-        alt: "EIPU - European International Peace University Logo",
+        alt: "Balkan Science and Management University Logo",
       },
     ],
   },
@@ -101,17 +101,17 @@ export const metadata: Metadata = {
   // Twitter Card
   twitter: {
     card: "summary_large_image",
-    title: "EIPU - European International Peace University",
+    title: "Balkan Science and Management University",
     description:
-      "EIPU - European International Peace University. International education in Poland with bachelor's, master's and PhD programs.",
-    images: ["/images/EIPU-logo-tam.jpg"],
-    creator: "@eipu_edu",
-    site: "@eipu_edu",
+      "Balkan Science and Management University. International education in Serbia with bachelor's, master's and PhD programs.",
+    images: ["/images/BSMU-logo-dark.png"],
+    creator: "@bsmu_edu",
+    site: "@bsmu_edu",
   },
 
   // Verification (Google Search Console, Bing, etc.)
   verification: {
-    google: "KLaSW1pDoMKO_L3uMzk9eMceecJ5d0d7Pvke5ldZkNs", // Google Search Console-dan alınacaq
+    google: "", // Google Search Console-dan alınacaq
     // yandex: "YOUR_YANDEX_CODE",
     // bing: "YOUR_BING_CODE",
   },
@@ -122,14 +122,14 @@ export const metadata: Metadata = {
   // Icons / Favicon
   icons: {
     icon: [
-      { url: "/images/EIPU-logo.png", sizes: "any", type: "image/png" },
-      { url: "/images/EIPU-logo.png", sizes: "32x32", type: "image/png" },
-      { url: "/images/EIPU-logo.png", sizes: "16x16", type: "image/png" },
+      { url: "/images/BSMU-logo-dark.png", sizes: "any", type: "image/png" },
+      { url: "/images/BSMU-logo-dark.png", sizes: "32x32", type: "image/png" },
+      { url: "/images/BSMU-logo-dark.png", sizes: "16x16", type: "image/png" },
     ],
     apple: [
-      { url: "/images/EIPU-logo.png", sizes: "180x180", type: "image/png" },
+      { url: "/images/BSMU-logo-dark.png", sizes: "180x180", type: "image/png" },
     ],
-    shortcut: "/images/EIPU-logo.png",
+    shortcut: "/images/BSMU-logo-dark.png",
   },
 };
 

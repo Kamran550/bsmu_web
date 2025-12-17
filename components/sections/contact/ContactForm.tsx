@@ -68,12 +68,12 @@ export default function ContactForm() {
       transition={{ duration: 0.6 }}
       viewport={{ once: true, margin: "-50px" }}
     >
-      <Card className="shadow-lg">
+      <Card className="shadow-lg border-2 border-slate-200 dark:border-slate-800">
         <CardHeader>
-          <CardTitle className="text-2xl md:text-3xl font-bold">
+          <CardTitle className="text-2xl md:text-3xl font-bold text-slate-800 dark:text-slate-100">
             {t("title")}
           </CardTitle>
-          <p className="text-muted-foreground mt-2">{t("subtitle")}</p>
+          <p className="text-slate-600 dark:text-slate-400 mt-2">{t("subtitle")}</p>
         </CardHeader>
         <CardContent>
           {isSubmitted && (
@@ -179,7 +179,7 @@ export default function ContactForm() {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-primary hover:bg-primary/90"
+                className="w-full bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white"
                 disabled={form.formState.isSubmitting}
               >
                 {form.formState.isSubmitting ? (
@@ -192,9 +192,9 @@ export default function ContactForm() {
                 )}
               </Button>
 
-              <p className="text-xs text-center text-muted-foreground">
+              <p className="text-xs text-center text-slate-600 dark:text-slate-400">
                 {t("privacy")}{" "}
-                <Link href="/fees#faq" className="text-primary hover:underline">
+                <Link href="/fees#faq" className="text-orange-600 dark:text-orange-400 hover:underline">
                   {t("viewFAQ")}
                 </Link>
               </p>

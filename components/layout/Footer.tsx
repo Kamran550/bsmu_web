@@ -8,14 +8,14 @@ import { useTranslations } from "next-intl";
 
 const contactInfo = {
   phones: {
-    poland: "+48 431226183",
+    serbia: "+381 11 234 5678",
     azerbaijan: "+994 504975252",
     luxembourg: "+352 661115815",
     turkey: "+90 538 6796595",
     global: "+49 15207108026",
   },
-  email: "info@eipu.edu.pl",
-  address: "Ogrodowa 5800-876 Warsaw / Poland",
+  email: "info@bsmu.edu.rs",
+  address: "Belgrade, Serbia",
 };
 
 export function Footer() {
@@ -43,14 +43,14 @@ export function Footer() {
   return (
     <footer className="bg-slate-950 text-gray-300 dark:bg-black border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10">
           {/* Logo və Açıqlama */}
-          <div className="lg:col-span-1">
+          <div className="md:col-span-2 lg:col-span-2">
             <Link href="/" className="inline-block mb-6 group">
               <div className="relative transition-transform group-hover:scale-105">
                 <Image
-                  src="/images/EIPU-logo-dark.png"
-                  alt="EIPU Logo"
+                  src="/images/BSMU-logo-tam-dark.png"
+                  alt="BSMU Logo"
                   width={250}
                   height={140}
                   className="object-contain h-20 md:h-24 w-auto"
@@ -83,14 +83,14 @@ export function Footer() {
           </div>
 
           {/* Contact Info */}
-          <div className="lg:col-span-1">
+          <div className="md:col-span-2 lg:col-span-2">
             <h3 className="text-white font-semibold text-lg mb-4 md:mb-6">
               {t("contact")}
             </h3>
             <ul className="space-y-4">
               {/* Phone Numbers */}
               <li className="flex items-start space-x-3">
-                <Phone className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                <Phone className="w-5 h-5 text-orange-600 dark:text-orange-400 mt-0.5 shrink-0" />
                 <div className="space-y-2 flex-1">
                   <div>
                     <span className="text-gray-500 text-xs font-medium block mb-0.5">
@@ -109,16 +109,16 @@ export function Footer() {
 
                   <div>
                     <span className="text-gray-500 text-xs font-medium block mb-0.5">
-                      {tPhoneNumbers("poland")}:
+                      {tPhoneNumbers("serbia")}:
                     </span>
                     <a
-                      href={`tel:${contactInfo.phones.poland.replace(
+                      href={`tel:${contactInfo.phones.serbia.replace(
                         /\s/g,
                         ""
                       )}`}
                       className="text-gray-400 hover:text-white transition-colors text-sm md:text-base"
                     >
-                      {contactInfo.phones.poland}
+                      {contactInfo.phones.serbia}
                     </a>
                   </div>
                   <div>
@@ -173,7 +173,7 @@ export function Footer() {
               </li>
 
               <li className="flex items-start space-x-3">
-                <Mail className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                <Mail className="w-5 h-5 text-orange-600 dark:text-orange-400 mt-0.5 shrink-0" />
                 <div>
                   <a
                     href={`mailto:${contactInfo.email}`}
@@ -184,7 +184,7 @@ export function Footer() {
                 </div>
               </li>
               <li className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                <MapPin className="w-5 h-5 text-orange-600 dark:text-orange-400 mt-0.5 shrink-0" />
                 <div>
                   <span className="text-gray-400 text-sm md:text-base">
                     {contactInfo.address}
@@ -195,7 +195,7 @@ export function Footer() {
           </div>
 
           {/* Additional Info */}
-          <div>
+          <div className="md:col-span-1 lg:col-span-1">
             <h3 className="text-white font-semibold text-lg mb-4 md:mb-6">
               {t("university")}
             </h3>

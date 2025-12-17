@@ -6,6 +6,6 @@ export const aboutPreviewData = {
       label: "Learn More",
       link: "/about",
     },
-    image: "/images/about-campus.jpg", // public/images folder düzdür
+    image: "/images/bsmu-hero-campus.jpg", // public/images folder düzdür
   };
   

@@ -96,8 +96,8 @@ export default function AboutHistory() {
           className="mt-16 rounded-2xl overflow-hidden shadow-2xl"
         >
           <Image
-            src="/images/about-campus.jpg"
-            alt="EIPU Campus"
+            src="/images/bsmu-hero-campus.jpg"
+            alt="BSMU Campus"
             width={1200}
             height={600}
             className="w-full h-[400px] md:h-[500px] object-cover"

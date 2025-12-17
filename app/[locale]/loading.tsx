@@ -41,7 +41,7 @@ export default function Loading() {
           />
         </motion.div>
 
-        {/* EIPU Text */}
+        {/* BSMU Text */}
         <motion.div
           className="flex flex-col items-center gap-2"
           initial={{ opacity: 0, y: 10 }}
@@ -49,7 +49,7 @@ export default function Loading() {
           transition={{ delay: 0.2, duration: 0.4 }}
         >
           <span className="text-xl font-bold tracking-wider text-zinc-800 dark:text-white">
-            EIPU
+            BSMU
           </span>
           
           {/* Loading Dots */}

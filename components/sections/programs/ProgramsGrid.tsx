@@ -31,7 +31,7 @@ export default function ProgramsGrid() {
   }, [selectedCategory, searchQuery]);
 
   return (
-    <section className="py-20 bg-white dark:bg-slate-950">
+    <section className="py-20 bg-linear-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <motion.div
@@ -41,10 +41,10 @@ export default function ProgramsGrid() {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-slate-800 dark:text-slate-100">
             {t("title")}
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">
             {t("subtitle")}
           </p>
         </motion.div>
@@ -99,7 +99,7 @@ export default function ProgramsGrid() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             viewport={{ once: true, margin: "-100px" }}
-            className="mb-6 text-sm text-muted-foreground"
+            className="mb-6 text-sm text-slate-600 dark:text-slate-400"
           >
             {t("found")} {filteredPrograms.length}{" "}
             {filteredPrograms.length === 1
@@ -108,9 +108,9 @@ export default function ProgramsGrid() {
           </motion.div>
         )}
 
-        {/* Programs Grid */}
+        {/* Programs Grid - 2 Column Layout */}
         {filteredPrograms.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
             {filteredPrograms.map((program, index) => (
               <ProgramCard key={program.id} program={program} index={index} />
             ))}
@@ -122,7 +122,7 @@ export default function ProgramsGrid() {
             viewport={{ once: true, margin: "-100px" }}
             className="text-center py-16"
           >
-            <p className="text-lg text-muted-foreground">{t("noResults")}</p>
+            <p className="text-lg text-slate-600 dark:text-slate-400">{t("noResults")}</p>
             <Button
               variant="outline"
               className="mt-4"
@@ -144,12 +144,12 @@ function ProgramCard({ program, index }: { program: Program; index: number }) {
   const t = useTranslations("programs.grid");
   const categoryColors: Record<string, string> = {
     undergraduate:
-      "bg-blue-100 text-blue-600 dark:bg-blue-900 dark:text-blue-400",
+      "bg-orange-100 text-orange-600 dark:bg-orange-900 dark:text-orange-400",
     graduate:
-      "bg-purple-100 text-purple-600 dark:bg-purple-900 dark:text-purple-400",
+      "bg-amber-100 text-amber-600 dark:bg-amber-900 dark:text-amber-400",
     doctoral:
-      "bg-indigo-100 text-indigo-600 dark:bg-indigo-900 dark:text-indigo-400",
-    online: "bg-green-100 text-green-600 dark:bg-green-900 dark:text-green-400",
+      "bg-orange-100 text-orange-600 dark:bg-orange-900 dark:text-orange-400",
+    online: "bg-amber-100 text-amber-600 dark:bg-amber-900 dark:text-amber-400",
     professional:
       "bg-orange-100 text-orange-600 dark:bg-orange-900 dark:text-orange-400",
   };
@@ -163,53 +163,52 @@ function ProgramCard({ program, index }: { program: Program; index: number }) {
       className="group"
     >
       <Card
-        className={`h-full flex flex-col shadow-lg hover:shadow-xl transition-all overflow-hidden ${
-          program.featured ? "border-2 border-primary" : "border"
+        className={`h-full flex flex-row lg:flex-col shadow-lg hover:shadow-xl transition-all overflow-hidden ${
+          program.featured ? "border-2 border-orange-500 dark:border-orange-600 bg-orange-50/50 dark:bg-orange-950/30" : "border border-slate-200 dark:border-slate-800"
         }`}
       >
         {program.featured && (
-          <div className="bg-primary text-white text-xs font-semibold px-4 py-1 text-center">
+          <div className="absolute -top-3 -right-3 bg-orange-600 dark:bg-orange-700 text-white px-3 py-1 rounded-full text-xs font-semibold rotate-12">
             {t("featuredProgram")}
           </div>
         )}
-        <CardHeader className="pb-4">
+        <div className="flex-1 p-6 border-r lg:border-r-0 lg:border-b border-slate-200 dark:border-slate-800">
           <div className="flex items-start justify-between mb-3">
             <span
               className={`text-xs font-semibold px-3 py-1 rounded-full ${
-                categoryColors[program.category] || "bg-gray-100 text-gray-600"
+                categoryColors[program.category] || "bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400"
               }`}
             >
               {program.degree}
             </span>
             {program.featured && (
-              <GraduationCap className="w-5 h-5 text-primary" />
+              <GraduationCap className="w-5 h-5 text-orange-600 dark:text-orange-400" />
             )}
           </div>
-          <CardTitle className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+          <CardTitle className="text-xl font-bold mb-2 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">
             {program.title}
           </CardTitle>
-          <div className="flex items-center gap-4 text-sm text-muted-foreground">
+          <div className="flex items-center gap-4 text-sm text-slate-600 dark:text-slate-400 mb-4">
             <div className="flex items-center gap-1">
               <Clock className="w-4 h-4" />
               <span>{program.duration}</span>
             </div>
           </div>
-        </CardHeader>
-        <CardContent className="flex-1 flex flex-col">
-          <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed text-sm">
+          <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-sm">
             {program.description}
           </p>
-
+        </div>
+        <CardContent className="flex-1 p-6 flex flex-col">
           {/* Features */}
           <div className="mb-4 flex-1">
-            <h4 className="font-semibold text-sm mb-2">{t("keyFeatures")}</h4>
-            <ul className="space-y-1">
+            <h4 className="font-semibold text-sm mb-2 text-slate-800 dark:text-slate-200">{t("keyFeatures")}</h4>
+            <ul className="space-y-1.5">
               {program.features.slice(0, 3).map((feature, idx) => (
                 <li
                   key={idx}
-                  className="text-xs text-gray-600 dark:text-gray-300 flex items-start gap-2"
+                  className="text-xs text-slate-700 dark:text-slate-300 flex items-start gap-2"
                 >
-                  <span className="text-primary mt-0.5">•</span>
+                  <span className="text-orange-600 dark:text-orange-400 mt-0.5">•</span>
                   <span>{feature}</span>
                 </li>
               ))}
@@ -217,19 +216,19 @@ function ProgramCard({ program, index }: { program: Program; index: number }) {
           </div>
 
           {/* Career Opportunities */}
-          <div className="mb-6 pt-4 border-t">
-            <h4 className="font-semibold text-sm mb-2">{t("careerPaths")}</h4>
+          <div className="mb-6 pt-4 border-t border-slate-200 dark:border-slate-800">
+            <h4 className="font-semibold text-sm mb-2 text-slate-800 dark:text-slate-200">{t("careerPaths")}</h4>
             <div className="flex flex-wrap gap-2">
               {program.career.slice(0, 2).map((career, idx) => (
                 <span
                   key={idx}
-                  className="text-xs bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-2 py-1 rounded"
+                  className="text-xs bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 px-2 py-1 rounded"
                 >
                   {career}
                 </span>
               ))}
               {program.career.length > 2 && (
-                <span className="text-xs text-muted-foreground">
+                <span className="text-xs text-slate-600 dark:text-slate-400">
                   +{program.career.length - 2} {t("more")}
                 </span>
               )}
@@ -238,13 +237,13 @@ function ProgramCard({ program, index }: { program: Program; index: number }) {
 
           {/* CTA Button */}
           <div className="flex gap-2">
-            <Button asChild variant="outline" className="flex-1 group/btn">
+            <Button asChild variant="outline" className="flex-1 group/btn border-slate-300 dark:border-slate-700">
               <Link href={`/programs/${program.id}`}>
                 {t("learnMore")}
                 <ArrowRight className="w-4 h-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
               </Link>
             </Button>
-            <Button asChild className="bg-primary hover:bg-primary/90">
+            <Button asChild className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white">
               <Link href="/apply">{t("apply")}</Link>
             </Button>
           </div>

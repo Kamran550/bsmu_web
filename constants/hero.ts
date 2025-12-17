@@ -10,6 +10,6 @@ export const heroData = {
       label: "Explore Programs",
       link: "/programs",
     },
-    backgroundImage: "/images/hero-campus.jpg", // public/images folder-də olacaq
+    backgroundImage: "/images/bsmu-campus.jpg", // public/images folder-də olacaq
   };
   

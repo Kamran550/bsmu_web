@@ -88,9 +88,9 @@ export default function FacultySelector({
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              className="mt-4 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg"
+              className="mt-4 p-4 bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-lg"
             >
-              <p className="text-sm font-medium text-blue-800 dark:text-blue-200">
+              <p className="text-sm font-medium text-orange-800 dark:text-orange-200">
                 {t("selected")}:{" "}
                 <span className="font-semibold">
                   {faculties.find((f) => f.id === selectedFacultyId)?.name}

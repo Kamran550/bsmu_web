@@ -30,19 +30,34 @@
     "apply": "Apply"
   },
   "hero": {
-    "title": "Shape Your Future with a World-Class Education",
-    "subtitle": "Join a global community of learners and gain the skills to lead tomorrow. Admissions are now open for the Fall 2025 intake.",
-    "primaryButton": "Apply Now",
-    "secondaryButton": "Explore Programs"
+    "title": "Transform Your Future with Excellence in Science and Management",
+    "subtitle": "Join a vibrant academic community dedicated to innovation and leadership. Begin your journey at BSMU and unlock your potential. Applications for Fall 2025 are now open.",
+    "primaryButton": "Start Your Application",
+    "secondaryButton": "Discover Our Programs",
+    "badge": "Fall 2025 Applications Now Open",
+    "stats": {
+      "yearsExperience": "Years of Experience",
+      "excellence": "Excellence",
+      "countries": "Countries",
+      "students": "Students"
+    },
+    "cards": {
+      "academic": "Academic",
+      "academicExcellence": "Excellence",
+      "innovation": "Innovation",
+      "andLeadership": "and Leadership"
+    }
   },
   "aboutPreview": {
-    "title": "About Us",
-    "description": "European International Peace University (EIPU) is an innovative higher education institution dedicated to fostering peace through education and global understanding. We provide our students with the knowledge and skills necessary to make positive changes in the world.",
-    "button": "Learn More"
+    "title": "Welcome to BSMU",
+    "description": "Balkan Science and Management University stands as a beacon of academic excellence, combining rigorous scientific education with innovative management practices. Our institution empowers students to become forward-thinking professionals ready to tackle global challenges.",
+    "button": "Explore More",
+    "badge": "Academic Excellence",
+    "yearsExperience": "25+ Years of Experience"
   },
   "statistics": {
-    "title": "Our Impact in Numbers",
-    "subtitle": "Building excellence through quality education and global partnerships",
+    "title": "BSMU by the Numbers",
+    "subtitle": "Excellence measured through achievement, innovation, and global reach",
     "students": "Students",
     "countries": "Countries",
     "programs": "Programs",
@@ -58,11 +73,41 @@
     "title": "What Our Students Say",
     "subtitle": "Success stories from our graduates"
   },
+  "features": {
+    "title": "Why Choose BSMU",
+    "subtitle": "Discover what makes us a leading institution in science and management education",
+    "academicExcellence": {
+      "title": "Academic Excellence",
+      "description": "Rigorous curriculum designed by industry experts and experienced academics to ensure you receive world-class education."
+    },
+    "globalNetwork": {
+      "title": "Global Network",
+      "description": "Connect with students and professionals from around the world, building international relationships that last a lifetime."
+    },
+    "diverseCommunity": {
+      "title": "Diverse Community",
+      "description": "Join a multicultural environment where different perspectives enrich your learning experience and personal growth."
+    },
+    "recognizedDegrees": {
+      "title": "Recognized Degrees",
+      "description": "Earn internationally recognized qualifications that open doors to career opportunities worldwide."
+    },
+    "modernFacilities": {
+      "title": "Modern Facilities",
+      "description": "Study in state-of-the-art laboratories, libraries, and learning spaces equipped with the latest technology."
+    },
+    "careerSupport": {
+      "title": "Career Support",
+      "description": "Benefit from comprehensive career services, internships, and job placement assistance throughout your journey."
+    }
+  },
   "cta": {
-    "title": "Invest in Your Future",
-    "description": "Join the university where global leaders are formed. The application process is simple and fast.",
+    "title": "Begin Your Academic Journey Today",
+    "description": "Take the first step towards a transformative education at BSMU. Our streamlined application process makes it easy to start your future.",
     "button": "Apply Now",
-    "learnMore": "Learn More"
+    "learnMore": "Explore Programs",
+    "deadlineTitle": "Application Deadline",
+    "applicationsOpen": "Applications are open"
   },
   "language": {
     "en": "English",
@@ -71,19 +116,19 @@
   },
   "about": {
     "hero": {
-      "title": "About European International Peace University",
-      "subtitle": "Empowering minds, building peace, and shaping tomorrow's leaders through excellence in education and global collaboration."
+      "title": "About Balkan Science and Management University",
+      "subtitle": "Empowering minds, building science and management, and shaping tomorrow's leaders through excellence in education and global collaboration."
     },
     "missionVision": {
       "title": "Our Mission & Vision",
-      "subtitle": "Committed to excellence, innovation, and global peace through education",
+      "subtitle": "Committed to excellence, innovation, and global science and management through education",
       "mission": {
         "title": "Our Mission",
         "description": "To provide world-class education that empowers students to become ethical leaders, critical thinkers, and agents of positive change in their communities and beyond. We are dedicated to fostering peace, understanding, and collaboration across cultures and nations."
       },
       "vision": {
         "title": "Our Vision",
-        "description": "To be a leading international university recognized for academic excellence, innovative research, and commitment to peace education. We envision a world where education bridges divides, creates understanding, and builds sustainable futures for all."
+        "description": "To be a leading international university recognized for academic excellence, innovative research, and commitment to science and management education. We envision a world where education bridges divides, creates understanding, and builds sustainable futures for all."
       },
       "coreValues": {
         "title": "Core Values",
@@ -98,7 +143,7 @@
     },
     "values": {
       "title": "Our Values",
-      "subtitle": "The principles that guide everything we do at EIPU",
+      "subtitle": "The principles that guide everything we do at BSMU",
       "items": {
         "academicExcellence": {
           "title": "Academic Excellence",
@@ -128,11 +173,11 @@
     },
     "history": {
       "title": "Our History",
-      "subtitle": "A journey of growth, excellence, and commitment to peace education",
+      "subtitle": "A journey of growth, excellence, and commitment to science and management education",
       "milestones": {
         "2020": {
           "title": "Foundation",
-          "description": "European International Peace University was established with a vision to create a world-class institution dedicated to peace education and global citizenship."
+          "description": "Balkan Science and Management University was established with a vision to create a world-class institution dedicated to science and management education and global citizenship."
         },
         "2021": {
           "title": "First Graduates",
@@ -140,7 +185,7 @@
         },
         "2022": {
           "title": "International Recognition",
-          "description": "EIPU received accreditation and established partnerships with leading universities worldwide, expanding our global reach."
+          "description": "BSMU received accreditation and established partnerships with leading universities worldwide, expanding our global reach."
         },
         "2023": {
           "title": "Expansion",
@@ -155,11 +200,11 @@
         "fullName": "Full Name",
         "position": "Position",
         "fullNameValue": "Prof. Dr. Serdar Koral",
-        "positionValue": "Rector of European International Peace University (EIPU)",
-        "description": "Prof. Dr. Serdar Koral is an internationally respected academic, higher education leader, and advocate for peace-focused learning. With a career spanning more than two decades across multiple continents, he brings to the European International Peace University (EIPU) a unique blend of academic excellence, global vision, and a deep commitment to shaping the next generation of socially responsible leaders.",
-        "qualifications": "Dr. Koral holds a Ph.D. in Political Science and International Relations, with specializations in peace and conflict studies, global diplomacy, and intercultural communication. He has held academic and administrative positions at renowned institutions in Europe, Central Asia, and the Middle East. His academic journey is marked by a consistent focus on promoting dialogue, critical thinking, and ethical leadership in higher education.",
+        "positionValue": "Rector of Balkan Science and Management University (BSMU)",
+        "description": "Prof. Dr. Serdar Koral is an internationally respected academic, higher education leader, and advocate for excellence in science and management education. With a career spanning more than two decades across multiple continents, he brings to the Balkan Science and Management University (BSMU) a unique blend of academic excellence, global vision, and a deep commitment to shaping the next generation of socially responsible leaders.",
+        "qualifications": "Dr. Koral holds a Ph.D. in Political Science and International Relations, with specializations in science and management studies, global diplomacy, and intercultural communication. He has held academic and administrative positions at renowned institutions in Europe, Central Asia, and the Middle East. His academic journey is marked by a consistent focus on promoting dialogue, critical thinking, and ethical leadership in higher education.",
         "email": "Email",
-        "emailValue": "serdar.koral@eipu.edu.pl"
+        "emailValue": "serdar.koral@bsmu.edu.rs"
       },
       "welcomeMessage": {
         "title": "Welcome Message from the Rector",
@@ -183,28 +228,28 @@
       "viceRector": {
         "position": "Vice Rector",
         "name": "Marlene Treiblach",
-        "email": "marlene.treiblach@eipu.edu.pl"
+        "email": "marlene.treiblach@bsmu.edu.rs"
       },
       "rectorAdvisor": {
         "position": "Rector Advisor",
         "name": "Milena Zaworska",
-        "email": "milena.zaworska@eipu.edu.pl"
+        "email": "milena.zaworska@bsmu.edu.rs"
       },
       "secretaryGeneral": {
         "position": "Secretary General",
         "name": "Martin Dravoski",
-        "email": "martin.dravoski@eipu.edu.pl"
+        "email": "martin.dravoski@bsmu.edu.rs"
       }
     }
   },
   "fees": {
     "hero": {
-      "title": "Tuition Fees & Payment Plans",
-      "subtitle": "Affordable education with flexible payment options. Explore our competitive tuition fees, payment plans, and scholarship opportunities designed to make quality education accessible."
+      "title": "Investment in Your Future",
+      "subtitle": "Transparent and flexible financing options for your education. Discover our competitive tuition structure, convenient payment plans, and comprehensive scholarship programs designed to support your academic journey."
     },
     "priceTable": {
-      "title": "Program Fees",
-      "subtitle": "Transparent pricing for all our academic programs",
+      "title": "Tuition Structure",
+      "subtitle": "Clear and competitive pricing across all degree programs",
       "mostPopular": "Most Popular",
       "year": "/year",
       "total": "Total",
@@ -260,8 +305,8 @@
       }
     },
     "paymentPlans": {
-      "title": "Flexible Payment Plans",
-      "subtitle": "Choose a payment plan that works best for you. We offer various options to make education affordable.",
+      "title": "Payment Options",
+      "subtitle": "Select the payment schedule that fits your financial situation. Multiple flexible plans available to accommodate your needs.",
       "recommended": "Recommended",
       "off": "Off",
       "customTerms": "Custom Terms",
@@ -310,8 +355,8 @@
       }
     },
     "scholarships": {
-      "title": "Scholarships & Financial Aid",
-      "subtitle": "We offer various scholarships to help make your education more affordable. Explore our scholarship opportunities below.",
+      "title": "Financial Support & Scholarships",
+      "subtitle": "Comprehensive financial assistance programs to support your academic goals. Explore available scholarship opportunities and funding options.",
       "coverage": "Coverage",
       "eligibility": "Eligibility",
       "applicationDeadline": "Application Deadline",
@@ -465,7 +510,9 @@
   "news": {
     "hero": {
       "title": "News & Updates",
-      "subtitle": "Stay informed about the latest news, events, announcements, and achievements at European International Peace University."
+      "subtitle": "Stay informed about the latest news, events, announcements, and achievements at Balkan Science and Management University.",
+      "latestUpdates": "Latest Updates",
+      "stayInformed": "Stay Informed"
     },
     "grid": {
       "featuredNews": "Featured News",
@@ -492,7 +539,7 @@
     },
     "newsletter": {
       "title": "Stay Updated",
-      "description": "Subscribe to our newsletter and never miss important news, events, and updates from EIPU.",
+      "description": "Subscribe to our newsletter and never miss important news, events, and updates from BSMU.",
       "emailPlaceholder": "Enter your email address",
       "subscribe": "Subscribe",
       "thankYou": "Thank you for subscribing!",
@@ -511,7 +558,10 @@
   "contact": {
     "hero": {
       "title": "Contact Us",
-      "subtitle": "We're here to help! Get in touch with us through any of the following channels. Our team is ready to answer your questions and assist you with your educational journey."
+      "subtitle": "We're here to help! Get in touch with us through any of the following channels. Our team is ready to answer your questions and assist you with your educational journey.",
+      "badge": "Get in Touch",
+      "quickResponse": "Quick Response",
+      "helpAvailable": "We're Here to Help"
     },
     "info": {
       "title": "Get in Touch",
@@ -568,12 +618,12 @@
     }
   },
   "footer": {
-    "description": "European International Peace University - An international university combining education, peace, and culture.",
+    "description": "Balkan Science and Management University - An international university combining excellence in science and management education.",
     "quickLinks": "Quick Links",
     "contact": "Contact",
     "university": "University",
     "phoneNumbers": {
-      "poland": "Poland",
+      "serbia": "Serbia",
       "azerbaijan": "Azerbaijan",
       "luxembourg": "Luxembourg",
       "turkey": "Türkiye",
@@ -593,13 +643,13 @@
       "studentLife": "Student Life",
       "admissions": "Admissions"
     },
-    "copyright": "© {year} European International Peace University. All rights reserved.",
+    "copyright": "© {year} Balkan Science and Management University. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
   },
   "apply": {
     "hero": {
-      "title": "Apply to EIPU",
+      "title": "Apply to BSMU",
       "subtitle": "Start your academic journey with us. Choose your degree program and begin your application today."
     },
     "applicantType": {

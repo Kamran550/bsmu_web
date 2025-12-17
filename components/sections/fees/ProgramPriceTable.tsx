@@ -17,7 +17,7 @@ export default function ProgramPriceTable() {
   const t = useTranslations("fees.priceTable");
 
   return (
-    <section className="py-20 bg-white dark:bg-slate-950">
+    <section className="py-20 bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <motion.div
@@ -27,16 +27,16 @@ export default function ProgramPriceTable() {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-slate-800 dark:text-slate-100">
             {t("title")}
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">
             {t("subtitle")}
           </p>
         </motion.div>
 
-        {/* Programs Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        {/* Programs Grid - Staggered Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
           {programKeys.map((key, index) => {
             const config = programConfig[index];
             const program = {
@@ -55,42 +55,42 @@ export default function ProgramPriceTable() {
                 className="relative"
               >
                 <Card
-                  className={`h-full flex flex-col shadow-lg hover:shadow-xl transition-all ${
+                  className={`h-full flex flex-row md:flex-col shadow-lg hover:shadow-xl transition-all overflow-hidden ${
                     program.popular
-                      ? "border-2 border-primary scale-105 lg:scale-110"
-                      : "border"
+                      ? "border-2 border-orange-500 dark:border-orange-600 bg-orange-50/50 dark:bg-orange-950/30"
+                      : "border border-slate-200 dark:border-slate-800"
                   }`}
                 >
                   {program.popular && (
-                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold">
+                    <div className="absolute -top-3 -right-3 bg-orange-600 dark:bg-orange-700 text-white px-4 py-1 rounded-full text-xs font-semibold rotate-12">
                       {t("mostPopular")}
                     </div>
                   )}
-                  <CardHeader className="text-center pb-4">
+                  <div className="flex-1 p-6 border-r md:border-r-0 md:border-b border-slate-200 dark:border-slate-800">
                     <CardTitle className="text-xl font-bold mb-2">
                       {program.name}
                     </CardTitle>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
                       {program.duration}
                     </p>
-                    <div className="mt-4">
-                      <div className="text-3xl font-bold text-primary">
+                    <div>
+                      <div className="text-3xl font-bold text-slate-900 dark:text-slate-100">
                         €{program.annualFee.toLocaleString()}
-                        <span className="text-sm text-muted-foreground font-normal">
+                        <span className="text-sm text-slate-600 dark:text-slate-400 font-normal ml-1">
                           {t("year")}
                         </span>
                       </div>
-                      <p className="text-sm text-muted-foreground mt-1">
+                      <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">
                         {t("total")}: €{program.totalFee.toLocaleString()}
                       </p>
                     </div>
-                  </CardHeader>
-                  <CardContent className="flex-1 flex flex-col">
-                    <ul className="space-y-3 flex-1">
+                  </div>
+                  <CardContent className="flex-1 p-6">
+                    <ul className="space-y-2.5">
                       {program.features.map((feature: string, idx: number) => (
                         <li key={idx} className="flex items-start gap-2">
-                          <Check className="w-5 h-5 text-green-600 dark:text-green-400 shrink-0 mt-0.5" />
-                          <span className="text-sm text-gray-600 dark:text-gray-300">
+                          <Check className="w-4 h-4 text-orange-600 dark:text-orange-400 shrink-0 mt-0.5" />
+                          <span className="text-sm text-slate-700 dark:text-slate-300">
                             {feature}
                           </span>
                         </li>

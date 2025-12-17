@@ -27,7 +27,7 @@ export default function NewsletterSection() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-slate-50 dark:from-slate-950 dark:to-black">
+    <section className="py-20 bg-linear-to-b from-white via-slate-50 to-white dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -35,15 +35,15 @@ export default function NewsletterSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <Card className="shadow-xl border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/20">
+          <Card className="shadow-xl border-2 border-orange-200 dark:border-orange-800 bg-gradient-to-br from-orange-50/50 to-amber-100/30 dark:from-orange-950/30 dark:to-orange-900/20">
             <CardHeader className="text-center">
-              <div className="w-16 h-16 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center mx-auto mb-4">
-                <Mail className="w-8 h-8 text-primary" />
+              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900/50 dark:to-amber-900/50 flex items-center justify-center mx-auto mb-4">
+                <Mail className="w-8 h-8 text-orange-600 dark:text-orange-400" />
               </div>
-              <CardTitle className="text-2xl md:text-3xl font-bold mb-2">
+              <CardTitle className="text-2xl md:text-3xl font-bold mb-2 text-slate-800 dark:text-slate-100">
                 {t("title")}
               </CardTitle>
-              <p className="text-muted-foreground">{t("description")}</p>
+              <p className="text-slate-600 dark:text-slate-400">{t("description")}</p>
             </CardHeader>
             <CardContent>
               {isSubscribed ? (
@@ -77,13 +77,13 @@ export default function NewsletterSection() {
                   <Button
                     type="submit"
                     size="lg"
-                    className="bg-primary hover:bg-primary/90 text-white whitespace-nowrap"
+                    className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white whitespace-nowrap"
                   >
                     {t("subscribe")}
                   </Button>
                 </form>
               )}
-              <p className="text-xs text-center text-muted-foreground mt-4">
+              <p className="text-xs text-center text-slate-600 dark:text-slate-400 mt-4">
                 {t("privacy")}
               </p>
             </CardContent>

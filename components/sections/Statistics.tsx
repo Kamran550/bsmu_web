@@ -63,7 +63,7 @@ export default function StatisticsSection() {
   const t = useTranslations("statistics");
 
   return (
-    <section className="py-20 bg-linear-to-b from-slate-100 to-white dark:from-slate-900 dark:to-black">
+    <section className="py-20 bg-gradient-to-b from-orange-50/30 via-amber-50/20 to-white dark:from-slate-950 dark:via-slate-900 dark:to-black">
       <div className="max-w-7xl mx-auto px-6">
         {/* Title */}
         <motion.div
@@ -73,10 +73,10 @@ export default function StatisticsSection() {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-slate-800 dark:text-slate-100">
             {t("title", { default: "Our Impact in Numbers" })}
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">
             {t("subtitle", {
               default: "Building excellence through quality education",
             })}
@@ -97,12 +97,12 @@ export default function StatisticsSection() {
                 stiffness: 100,
               }}
               viewport={{ once: true, margin: "-50px" }}
-              className="text-center p-6 rounded-2xl bg-white dark:bg-slate-800 shadow-lg hover:shadow-xl transition-all border border-gray-100 dark:border-slate-700"
+              className="text-center p-6 rounded-2xl bg-white dark:bg-slate-900 shadow-lg hover:shadow-xl transition-all border border-orange-100 dark:border-orange-900/50"
             >
-              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+              <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-orange-600 to-amber-600 dark:from-orange-400 dark:to-amber-400 bg-clip-text text-transparent mb-2">
                 <Counter end={stat.value} suffix={stat.suffix} duration={2} />
               </div>
-              <p className="text-sm md:text-base text-gray-600 dark:text-gray-300 font-medium">
+              <p className="text-sm md:text-base text-slate-700 dark:text-slate-300 font-medium">
                 {t(stat.label.toLowerCase())}
               </p>
             </motion.div>

@@ -1,10 +1,10 @@
 module.exports = {
     apps: [
       {
-        name: "eipu-next",
+        name: "bsmu-next",
         script: "node_modules/next/dist/bin/next",
         args: "start -p 3000",
-        cwd: "/home/eipu/htdocs/eipu.edu.pl",
+        cwd: "/home/bsmu/htdocs/bsmu.edu.rs",
         interpreter: "node",
         env: {
           NODE_ENV: "production",

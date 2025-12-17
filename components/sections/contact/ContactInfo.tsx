@@ -7,20 +7,20 @@ import { useTranslations } from "next-intl";
 
 const contactInfo = {
   phone: {
-    primary: "+48 12 345 6789",
-    secondary: "+48 12 345 6789",
+    primary: "+381 11 234 5678",
+    secondary: "+381 11 234 5678",
     hours: "Mon-Fri: 9:00 AM - 6:00 PM",
   },
   email: {
-    primary: "info@eipu.edu",
-    admissions: "admissions@eipu.edu",
-    support: "support@eipu.edu",
+    primary: "info@bsmu.edu.rs",
+    admissions: "admissions@bsmu.edu.rs",
+    support: "support@bsmu.edu.rs",
   },
   address: {
     street: "ul. Krakowska 23",
-    city: "Warsaw, Poland",
+    city: "Belgrade, Serbia",
     zip: "00-000",
-    country: "Poland",
+    country: "Serbia",
   },
   hours: {
     weekdays: "Monday - Friday: 9:00 AM - 6:00 PM",
@@ -33,7 +33,7 @@ export default function ContactInfo() {
   const t = useTranslations("contact.info");
 
   return (
-    <section className="py-20 bg-linear-to-b from-slate-50 to-white dark:from-slate-900 dark:to-black">
+    <section className="py-20 bg-linear-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <motion.div
@@ -43,16 +43,16 @@ export default function ContactInfo() {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-slate-800 dark:text-slate-100">
             {t("title")}
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">
             {t("subtitle")}
           </p>
         </motion.div>
 
-        {/* Contact Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {/* Contact Cards Grid - 3 Column Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {/* Phone */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -60,11 +60,11 @@ export default function ContactInfo() {
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true, margin: "-50px" }}
           >
-            <Card className="h-full shadow-lg hover:shadow-xl transition-shadow border-2 hover:border-primary/50">
+            <Card className="h-full shadow-lg hover:shadow-xl transition-shadow border-2 border-slate-200 dark:border-slate-800 hover:border-orange-500 dark:hover:border-orange-600">
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-16 h-16 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center mb-4">
-                    <Phone className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900/50 dark:to-amber-900/50 flex items-center justify-center mb-4">
+                    <Phone className="w-8 h-8 text-orange-600 dark:text-orange-400" />
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">
                     {t("phone")}
@@ -75,7 +75,7 @@ export default function ContactInfo() {
                         /\s/g,
                         ""
                       )}`}
-                      className="block text-lg font-semibold text-primary hover:underline"
+                      className="block text-lg font-semibold text-orange-600 dark:text-orange-400 hover:underline"
                     >
                       {contactInfo.phone.primary}
                     </a>
@@ -107,11 +107,11 @@ export default function ContactInfo() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true, margin: "-50px" }}
           >
-            <Card className="h-full shadow-lg hover:shadow-xl transition-shadow border-2 hover:border-primary/50">
+            <Card className="h-full shadow-lg hover:shadow-xl transition-shadow border-2 border-slate-200 dark:border-slate-800 hover:border-orange-500 dark:hover:border-orange-600">
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-16 h-16 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center mb-4">
-                    <Mail className="w-8 h-8 text-purple-600 dark:text-purple-400" />
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900 dark:to-amber-900 flex items-center justify-center mb-4">
+                    <Mail className="w-8 h-8 text-orange-600 dark:text-orange-400" />
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">
                     {t("email")}
@@ -119,7 +119,7 @@ export default function ContactInfo() {
                   <div className="space-y-3">
                     <a
                       href={`mailto:${contactInfo.email.primary}`}
-                      className="block text-sm font-semibold text-primary hover:underline break-all"
+                      className="block text-sm font-semibold text-orange-600 dark:text-orange-400 hover:underline break-all"
                     >
                       {contactInfo.email.primary}
                     </a>
@@ -157,13 +157,12 @@ export default function ContactInfo() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true, margin: "-50px" }}
-            className="md:col-span-2 lg:col-span-1"
           >
-            <Card className="h-full shadow-lg hover:shadow-xl transition-shadow border-2 hover:border-primary/50">
+            <Card className="h-full shadow-lg hover:shadow-xl transition-shadow border-2 border-slate-200 dark:border-slate-800 hover:border-orange-500 dark:hover:border-orange-600">
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-16 h-16 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mb-4">
-                    <MapPin className="w-8 h-8 text-green-600 dark:text-green-400" />
+                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900 dark:to-orange-900 flex items-center justify-center mb-4">
+                    <MapPin className="w-8 h-8 text-orange-600 dark:text-orange-400" />
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">
                     {t("address")}
@@ -193,7 +192,7 @@ export default function ContactInfo() {
           <Card className="max-w-2xl mx-auto">
             <CardContent className="pt-6">
               <div className="flex items-center justify-center gap-3 mb-4">
-                <Clock className="w-6 h-6 text-primary" />
+                <Clock className="w-6 h-6 text-orange-600 dark:text-orange-400" />
                 <h3 className="text-xl font-bold">{t("officeHours")}</h3>
               </div>
               <div className="space-y-2 text-sm text-gray-600 dark:text-gray-300">

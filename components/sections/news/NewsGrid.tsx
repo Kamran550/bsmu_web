@@ -65,7 +65,7 @@ export default function NewsGrid() {
   };
 
   return (
-    <section className="py-20 bg-white dark:bg-slate-950">
+    <section className="py-20 bg-linear-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Featured Section */}
         {featuredNews.length > 0 &&
@@ -79,12 +79,12 @@ export default function NewsGrid() {
               className="mb-16"
             >
               <div className="flex items-center gap-2 mb-6">
-                <Star className="w-5 h-5 text-yellow-500 fill-yellow-500" />
-                <h2 className="text-2xl md:text-3xl font-bold">
+                <Star className="w-5 h-5 text-orange-500 fill-orange-500" />
+                <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-orange-600 via-amber-600 to-orange-600 bg-clip-text text-transparent">
                   {t("featuredNews")}
                 </h2>
               </div>
-              <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+              <div className="grid md:grid-cols-2 gap-8 lg:gap-10">
                 {featuredNews.map((item, index) => (
                   <FeaturedNewsCard key={item.id} item={item} index={index} />
                 ))}
@@ -101,7 +101,7 @@ export default function NewsGrid() {
           className="mb-12"
         >
           <div className="flex flex-col md:flex-row gap-4 items-center justify-between mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold">{t("allNews")}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 dark:text-slate-100">{t("allNews")}</h2>
             <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
               {/* Search */}
               <div className="relative w-full md:w-64">
@@ -127,7 +127,7 @@ export default function NewsGrid() {
                     onClick={() => setSelectedCategory(category.id)}
                     className={
                       selectedCategory === category.id
-                        ? "bg-primary hover:bg-primary/90 text-white"
+                        ? "bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white"
                         : ""
                     }
                   >
@@ -140,7 +140,7 @@ export default function NewsGrid() {
 
           {/* Results Count */}
           {filteredNews.length > 0 && (
-            <div className="text-sm text-muted-foreground mb-6">
+            <div className="text-sm text-slate-600 dark:text-slate-400 mb-6">
               {t("found")} {filteredNews.length}{" "}
               {filteredNews.length === 1 ? t("article") : t("articles")}
             </div>
@@ -150,7 +150,7 @@ export default function NewsGrid() {
         {/* News Grid */}
         {paginatedNews.length > 0 ? (
           <>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 mb-12">
               {paginatedNews.map((item, index) => (
                 <NewsCard key={item.id} item={item} index={index} />
               ))}
@@ -172,7 +172,7 @@ export default function NewsGrid() {
             viewport={{ once: true, margin: "-100px" }}
             className="text-center py-16"
           >
-            <p className="text-lg text-muted-foreground mb-4">
+            <p className="text-lg text-slate-600 dark:text-slate-400 mb-4">
               {t("noResults")}
             </p>
             <Button
@@ -202,7 +202,7 @@ function FeaturedNewsCard({ item, index }: { item: NewsItem; index: number }) {
       className="group"
     >
       <Link href={`/news/${item.slug}`}>
-        <Card className="h-full shadow-lg hover:shadow-xl transition-all border-2 border-primary/50 overflow-hidden cursor-pointer group-hover:border-primary">
+        <Card className="h-full shadow-lg hover:shadow-xl transition-all border-2 border-orange-500/50 dark:border-orange-600/50 overflow-hidden cursor-pointer group-hover:border-orange-600 dark:group-hover:border-orange-500">
           {item.image && (
             <div className="relative w-full h-48 md:h-64 overflow-hidden">
               <Image
@@ -212,7 +212,7 @@ function FeaturedNewsCard({ item, index }: { item: NewsItem; index: number }) {
                 className="object-cover group-hover:scale-110 transition-transform duration-300"
               />
               <div className="absolute top-4 left-4">
-                <span className="bg-primary text-white text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1">
+                <span className="bg-gradient-to-r from-orange-600 to-amber-600 dark:from-orange-700 dark:to-amber-700 text-white text-xs font-semibold px-3 py-1 rounded-full flex items-center gap-1 shadow-lg">
                   <Star className="w-3 h-3 fill-white" />
                   {t("featured")}
                 </span>
@@ -220,8 +220,8 @@ function FeaturedNewsCard({ item, index }: { item: NewsItem; index: number }) {
             </div>
           )}
           <CardHeader>
-            <div className="flex items-center gap-4 text-xs text-muted-foreground mb-2">
-              <span className="uppercase font-semibold px-2 py-1 bg-primary/10 text-primary rounded">
+            <div className="flex items-center gap-4 text-xs text-slate-600 dark:text-slate-400 mb-2">
+              <span className="uppercase font-semibold px-2 py-1 bg-orange-100 dark:bg-orange-900/50 text-orange-600 dark:text-orange-400 rounded">
                 {item.category}
               </span>
               <div className="flex items-center gap-1">
@@ -239,7 +239,7 @@ function FeaturedNewsCard({ item, index }: { item: NewsItem; index: number }) {
                 </div>
               )}
             </div>
-            <h3 className="text-xl md:text-2xl font-bold group-hover:text-primary transition-colors line-clamp-2">
+            <h3 className="text-xl md:text-2xl font-bold group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors line-clamp-2">
               {item.title}
             </h3>
           </CardHeader>
@@ -279,9 +279,9 @@ function NewsCard({ item, index }: { item: NewsItem; index: number }) {
       className="group"
     >
       <Link href={`/news/${item.slug}`}>
-        <Card className="h-full flex flex-col shadow-lg hover:shadow-xl transition-all overflow-hidden cursor-pointer group-hover:border-primary">
+        <Card className="h-full flex flex-row lg:flex-col shadow-lg hover:shadow-xl transition-all overflow-hidden cursor-pointer group-hover:border-orange-500 dark:group-hover:border-orange-600 border border-slate-200 dark:border-slate-800">
           {item.image && (
-            <div className="relative w-full h-48 overflow-hidden">
+            <div className="relative w-48 lg:w-full h-48 lg:h-48 overflow-hidden shrink-0">
               <Image
                 src={item.image}
                 alt={item.title}
@@ -289,50 +289,52 @@ function NewsCard({ item, index }: { item: NewsItem; index: number }) {
                 className="object-cover group-hover:scale-110 transition-transform duration-300"
               />
               {item.featured && (
-                <div className="absolute top-3 left-3">
-                  <span className="bg-primary text-white text-xs font-semibold px-2 py-1 rounded-full">
+                <div className="absolute -top-2 -right-2">
+                  <span className="bg-gradient-to-r from-orange-600 to-amber-600 dark:from-orange-700 dark:to-amber-700 text-white text-xs font-semibold px-2 py-1 rounded-full rotate-12 shadow-lg">
                     {t("featured")}
                   </span>
                 </div>
               )}
             </div>
           )}
-          <CardHeader className="flex-1">
-            <div className="flex items-center gap-3 text-xs text-muted-foreground mb-2">
-              <span className="uppercase font-semibold px-2 py-1 bg-primary/10 text-primary rounded">
-                {item.category}
-              </span>
-              <div className="flex items-center gap-1">
-                <Calendar className="w-3 h-3" />
-                {new Date(item.date).toLocaleDateString("en-US", {
-                  month: "short",
-                  day: "numeric",
-                })}
-              </div>
-            </div>
-            <h3 className="text-lg md:text-xl font-bold mb-2 group-hover:text-primary transition-colors line-clamp-2">
-              {item.title}
-            </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-300 line-clamp-3">
-              {item.excerpt}
-            </p>
-          </CardHeader>
-          <CardContent>
-            <div className="flex items-center justify-between pt-4 border-t">
-              <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                <User className="w-3 h-3" />
-                <span>{item.author}</span>
-              </div>
-              {item.readTime && (
-                <div className="flex items-center gap-1 text-xs text-muted-foreground">
-                  <Clock className="w-3 h-3" />
-                  <span>
-                    {item.readTime} {t("min")}
-                  </span>
+          <div className="flex-1 flex flex-col">
+            <CardHeader className="flex-1 pb-3">
+              <div className="flex items-center gap-3 text-xs text-slate-600 dark:text-slate-400 mb-2">
+                <span className="uppercase font-semibold px-2 py-1 bg-orange-100 dark:bg-orange-900/50 text-orange-600 dark:text-orange-400 rounded">
+                  {item.category}
+                </span>
+                <div className="flex items-center gap-1">
+                  <Calendar className="w-3 h-3" />
+                  {new Date(item.date).toLocaleDateString("en-US", {
+                    month: "short",
+                    day: "numeric",
+                  })}
                 </div>
-              )}
-            </div>
-          </CardContent>
+              </div>
+              <h3 className="text-lg md:text-xl font-bold mb-2 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors line-clamp-2">
+                {item.title}
+              </h3>
+              <p className="text-sm text-slate-700 dark:text-slate-300 line-clamp-3">
+                {item.excerpt}
+              </p>
+            </CardHeader>
+            <CardContent className="pt-3 border-t border-slate-200 dark:border-slate-800">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
+                  <User className="w-3 h-3" />
+                  <span>{item.author}</span>
+                </div>
+                {item.readTime && (
+                  <div className="flex items-center gap-1 text-xs text-slate-600 dark:text-slate-400">
+                    <Clock className="w-3 h-3" />
+                    <span>
+                      {item.readTime} {t("min")}
+                    </span>
+                  </div>
+                )}
+              </div>
+            </CardContent>
+          </div>
         </Card>
       </Link>
     </motion.div>
@@ -400,7 +402,7 @@ function Pagination({
               onClick={() => onPageChange(page as number)}
               className={
                 currentPage === page
-                  ? "bg-primary hover:bg-primary/90 text-white"
+                  ? "bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white"
                   : ""
               }
             >

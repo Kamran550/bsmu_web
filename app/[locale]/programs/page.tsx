@@ -5,7 +5,7 @@ import ApplyCTA from "@/components/sections/ApplyCTA";
 
 export default function ProgramsPage() {
   return (
-    <main className="min-h-screen bg-zinc-50 font-sans dark:bg-black">
+    <main className="min-h-screen bg-white font-sans dark:bg-slate-950">
       <ProgramsHero />
       <ProgramsGrid />
       {/* <TestimonialsSection /> */}

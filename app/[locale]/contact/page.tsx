@@ -6,7 +6,7 @@ import ContactSocial from "@/components/sections/contact/ContactSocial";
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-zinc-50 font-sans dark:bg-black">
+    <main className="min-h-screen bg-white font-sans dark:bg-slate-950">
       <ContactHero />
       <ContactInfo />
       <div className="bg-white dark:bg-slate-950 py-20">

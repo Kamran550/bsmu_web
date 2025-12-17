@@ -19,35 +19,35 @@ const socialLinks = [
   {
     name: "Facebook",
     icon: Facebook,
-    href: "https://facebook.com/eipu",
+    href: "https://facebook.com/bsmu",
     color: "text-blue-600 dark:text-blue-400",
     bgColor: "bg-blue-100 dark:bg-blue-900",
   },
   {
     name: "Twitter",
     icon: Twitter,
-    href: "https://twitter.com/eipu",
+    href: "https://twitter.com/bsmu",
     color: "text-sky-600 dark:text-sky-400",
     bgColor: "bg-sky-100 dark:bg-sky-900",
   },
   {
     name: "Instagram",
     icon: Instagram,
-    href: "https://instagram.com/eipu",
+    href: "https://instagram.com/bsmu",
     color: "text-pink-600 dark:text-pink-400",
     bgColor: "bg-pink-100 dark:bg-pink-900",
   },
   {
     name: "LinkedIn",
     icon: Linkedin,
-    href: "https://linkedin.com/company/eipu",
+    href: "https://linkedin.com/company/bsmu",
     color: "text-blue-700 dark:text-blue-400",
     bgColor: "bg-blue-100 dark:bg-blue-900",
   },
   {
     name: "YouTube",
     icon: Youtube,
-    href: "https://youtube.com/@eipu",
+    href: "https://youtube.com/@bsmu",
     color: "text-red-600 dark:text-red-400",
     bgColor: "bg-red-100 dark:bg-red-900",
   },
@@ -57,7 +57,7 @@ export default function ContactSocial() {
   const t = useTranslations("contact.social");
 
   return (
-    <section className="py-20 bg-linear-to-b from-white to-slate-50 dark:from-slate-950 dark:to-black">
+    <section className="py-20 bg-linear-to-b from-white via-slate-50 to-white dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           {/* Social Media */}
@@ -67,7 +67,7 @@ export default function ContactSocial() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true, margin: "-50px" }}
           >
-            <Card className="shadow-lg">
+            <Card className="shadow-lg border-2 border-slate-200 dark:border-slate-800">
               <CardContent className="pt-6">
                 <div className="text-center mb-6">
                   <h3 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">
@@ -113,8 +113,8 @@ export default function ContactSocial() {
           >
             <Card className="shadow-lg h-full">
               <CardContent className="pt-6 flex flex-col items-center justify-center text-center h-full min-h-[200px]">
-                <div className="w-16 h-16 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center mb-4">
-                  <HelpCircle className="w-8 h-8 text-primary" />
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900/50 dark:to-amber-900/50 flex items-center justify-center mb-4">
+                  <HelpCircle className="w-8 h-8 text-orange-600 dark:text-orange-400" />
                 </div>
                 <h3 className="text-2xl font-bold mb-2 text-gray-900 dark:text-white">
                   {t("haveQuestions")}

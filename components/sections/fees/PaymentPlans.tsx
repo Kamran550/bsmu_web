@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardTitle } from "@/components/ui/card";
 import { Calendar, CreditCard, Wallet, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 
 const planKeys = [
@@ -19,10 +19,9 @@ const planRecommended = [false, true, false, false] as const;
 
 export default function PaymentPlans() {
   const t = useTranslations("fees.paymentPlans");
-  const locale = useLocale();
 
   return (
-    <section className="py-20 bg-linear-to-b from-slate-50 to-white dark:from-slate-900 dark:to-black">
+    <section className="py-20 bg-linear-to-b from-white via-slate-50 to-white dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <motion.div
@@ -32,16 +31,16 @@ export default function PaymentPlans() {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-slate-800 dark:text-slate-100">
             {t("title")}
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">
             {t("subtitle")}
           </p>
         </motion.div>
 
-        {/* Payment Plans Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        {/* Payment Plans Grid - 2x2 Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
           {planKeys.map((key, index) => {
             const Icon = planIcons[index];
             const discount = planDiscounts[index];
@@ -62,51 +61,53 @@ export default function PaymentPlans() {
                 className="relative"
               >
                 <Card
-                  className={`h-full flex flex-col shadow-lg hover:shadow-xl transition-all ${
+                  className={`h-full flex flex-row md:flex-col shadow-lg hover:shadow-xl transition-all overflow-hidden ${
                     plan.recommended
-                      ? "border-2 border-primary bg-primary/5"
-                      : "border"
+                      ? "border-2 border-orange-500 dark:border-orange-600 bg-orange-50/50 dark:bg-orange-950/30"
+                      : "border border-slate-200 dark:border-slate-800"
                   }`}
                 >
                   {plan.recommended && (
-                    <div className="absolute -top-3 right-4 bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold">
+                    <div className="absolute -top-3 -right-3 bg-orange-600 dark:bg-orange-700 text-white px-3 py-1 rounded-full text-xs font-semibold rotate-12">
                       {t("recommended")}
                     </div>
                   )}
-                  <CardHeader className="text-center pb-4">
-                    <div className="w-14 h-14 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center mx-auto mb-4">
-                      <Icon className="w-7 h-7 text-primary" />
+                  <div className="shrink-0 p-6 border-r md:border-r-0 md:border-b border-slate-200 dark:border-slate-800 flex items-center justify-center">
+                    <div className="w-16 h-16 rounded-xl bg-orange-100 dark:bg-orange-900/50 flex items-center justify-center">
+                      <Icon className="w-8 h-8 text-orange-600 dark:text-orange-400" />
                     </div>
+                  </div>
+                  <div className="flex-1 p-6">
                     <CardTitle className="text-xl font-bold mb-2">
                       {plan.name}
                     </CardTitle>
                     {discount !== "Custom" && (
-                      <div className="text-2xl font-bold text-primary">
+                      <div className="text-2xl font-bold text-orange-600 dark:text-orange-400 mb-2">
                         {discount} {t("off")}
                       </div>
                     )}
                     {discount === "Custom" && (
-                      <div className="text-lg font-semibold text-primary">
+                      <div className="text-lg font-semibold text-orange-600 dark:text-orange-400 mb-2">
                         {t("customTerms")}
                       </div>
                     )}
-                    <p className="text-sm text-muted-foreground mt-2">
+                    <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
                       {plan.description}
                     </p>
-                  </CardHeader>
-                  <CardContent className="flex-1 flex flex-col">
-                    <ul className="space-y-2 flex-1 mb-6">
+                    <ul className="space-y-2">
                       {plan.benefits.map((benefit: string, idx: number) => (
                         <li
                           key={idx}
-                          className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-300"
+                          className="flex items-start gap-2 text-sm text-slate-700 dark:text-slate-300"
                         >
-                          <span className="text-primary mt-0.5">✓</span>
+                          <span className="text-orange-600 dark:text-orange-400 mt-0.5">
+                            ✓
+                          </span>
                           <span>{benefit}</span>
                         </li>
                       ))}
                     </ul>
-                  </CardContent>
+                  </div>
                 </Card>
               </motion.div>
             );
@@ -121,8 +122,12 @@ export default function PaymentPlans() {
           viewport={{ once: true, margin: "-50px" }}
           className="mt-12 text-center"
         >
-          <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-            <Link href={`/${locale}/contact`}>{t("contact")}</Link>
+          <Button
+            asChild
+            size="lg"
+            className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white"
+          >
+            <Link href={`/contact`}>{t("contact")}</Link>
           </Button>
         </motion.div>
       </div>

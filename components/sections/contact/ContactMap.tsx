@@ -8,14 +8,14 @@ import { useTranslations } from "next-intl";
 
 export default function ContactMap() {
   const t = useTranslations("contact.map");
-  // Google Maps embed URL for Ogrodowa 58, Warsaw, Poland
+  // Google Maps embed URL for ul. Krakowska 23, 00-000 Belgrade, Serbia
   const mapEmbedUrl =
-    "https://maps.google.com/maps?q=Ogrodowa+58,00-876+Warsaw,Poland&t=&z=15&ie=UTF8&iwloc=&output=embed";
+    "https://maps.google.com/maps?q=ul.+Krakowska+23,00-000+Belgrade,Serbia&t=&z=15&ie=UTF8&iwloc=&output=embed";
 
   const address = {
-    full: "Ogrodowa 58, 00-876 Warsaw, Poland",
+    full: "ul. Krakowska 23, 00-000 Belgrade, Serbia",
     googleMapsUrl:
-      "https://www.google.com/maps/place/Ogrodowa+58,00-876+Warsaw,Poland",
+      "https://www.google.com/maps/place/ul.+Krakowska+23,00-000+Belgrade,Serbia",
   };
 
   return (
@@ -26,13 +26,13 @@ export default function ContactMap() {
       viewport={{ once: true, margin: "-50px" }}
       className="h-full"
     >
-      <Card className="shadow-lg h-full flex flex-col">
+      <Card className="shadow-lg h-full flex flex-col border-2 border-slate-200 dark:border-slate-800">
         <CardHeader>
-          <CardTitle className="text-2xl md:text-3xl font-bold flex items-center gap-2">
-            <MapPin className="w-6 h-6 text-primary" />
+          <CardTitle className="text-2xl md:text-3xl font-bold flex items-center gap-2 text-slate-800 dark:text-slate-100">
+            <MapPin className="w-6 h-6 text-orange-600 dark:text-orange-400" />
             {t("title")}
           </CardTitle>
-          <p className="text-muted-foreground mt-2">{t("subtitle")}</p>
+          <p className="text-slate-600 dark:text-slate-400 mt-2">{t("subtitle")}</p>
         </CardHeader>
         <CardContent className="flex-1 flex flex-col">
           {/* Map */}
@@ -46,7 +46,7 @@ export default function ContactMap() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="absolute inset-0"
-              title="EIPU Location Map"
+              title="BSMU Location Map"
             />
           </div>
 
