@@ -31,6 +31,13 @@ export default function AdministrativeUnitsPage() {
       nameKey: "secretaryGeneral.name",
       emailKey: "secretaryGeneral.email",
     },
+    {
+      id: "office-director",
+      image: "/images/office-director.jpg",
+      positionKey: "officeDirector.position",
+      nameKey: "officeDirector.name",
+      emailKey: "officeDirector.email",
+    },
   ];
 
   return (

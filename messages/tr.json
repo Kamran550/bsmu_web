@@ -199,12 +199,12 @@
         "title": "Rektör Profili",
         "fullName": "Ad Soyad",
         "position": "Pozisyon",
-        "fullNameValue": "Prof. Dr. Serdar Koral",
+        "fullNameValue": "Prof. Dr. Elira Kostanova",
         "positionValue": "Balkan Bilim ve Yönetim Üniversitesi (BSMU) Rektörü",
-        "description": "Prof. Dr. Serdar Koral, uluslararası saygın bir akademisyen, yüksek öğretim lideri ve bilim ve yönetim eğitiminde mükemmellik savunucusudur. Kıtalar arası yirmi yılı aşkın bir kariyere sahip olan Koral, Balkan Bilim ve Yönetim Üniversitesi'ne (BSMU) akademik mükemmellik, küresel vizyon ve sosyal sorumluluk sahibi liderlerin bir sonraki neslini şekillendirme konusunda derin bir bağlılık getirmektedir.",
-        "qualifications": "Dr. Koral, barış ve çatışma çalışmaları, küresel diplomasi ve kültürlerarası iletişim alanlarında uzmanlaşmış Siyaset Bilimi ve Uluslararası İlişkiler alanında doktora derecesine sahiptir. Avrupa, Orta Asya ve Orta Doğu'daki tanınmış kurumlarda akademik ve idari pozisyonlar almıştır. Akademik yolculuğu, yüksek öğretimde diyalog, eleştirel düşünme ve etik liderliği teşvik etmeye odaklanmıştır.",
+        "description": "Prof. Dr. Elira Kostanova, uluslararası saygın bir akademisyen, yüksek öğretim lideri ve bilim ve yönetim eğitiminde mükemmellik savunucusudur. Kıtalar arası yirmi yılı aşkın bir kariyere sahip olan Kostanova, Balkan Bilim ve Yönetim Üniversitesi'ne (BSMU) akademik mükemmellik, küresel vizyon ve sosyal sorumluluk sahibi liderlerin bir sonraki neslini şekillendirme konusunda derin bir bağlılık getirmektedir.",
+        "qualifications": "Dr. Kostanova, barış ve çatışma çalışmaları, küresel diplomasi ve kültürlerarası iletişim alanlarında uzmanlaşmış Siyaset Bilimi ve Uluslararası İlişkiler alanında doktora derecesine sahiptir. Avrupa, Orta Asya ve Orta Doğu'daki tanınmış kurumlarda akademik ve idari pozisyonlar almıştır. Akademik yolculuğu, yüksek öğretimde diyalog, eleştirel düşünme ve etik liderliği teşvik etmeye odaklanmıştır.",
         "email": "E-posta",
-        "emailValue": "serdar.koral@bsmu.edu.rs"
+        "emailValue": "elira.kostanova@bsmu.edu.rs"
       },
       "welcomeMessage": {
         "title": "Rektörden Hoş Geldiniz Mesajı",
@@ -214,7 +214,7 @@
         "paragraph3": "Birlikte, öğrenme, araştırma ve işbirliği yoluyla daha parlak bir gelecek inşa etmeye çalışacağız. Buradaki zamanınızın hem ödüllendirici hem de ilham verici olacağına inanıyorum.",
         "closing": "Çalışmalarınızda ve ötesinde başarı ve tatmin dilerim.",
         "signature": "Saygılarımla,",
-        "signatureName": "Prof. Dr. Serdar Koral",
+        "signatureName": "Prof. Dr. Elira Kostanova",
         "signatureTitle": "Rektör"
       },
       "tabs": {
@@ -227,18 +227,23 @@
       "subtitle": "Mükemmellik ve hizmete adanmış idari ekibimizle tanışın",
       "viceRector": {
         "position": "Rektör Yardımcısı",
-        "name": "Marlene Treiblach",
-        "email": "marlene.treiblach@bsmu.edu.rs"
+        "name": "Prof Dr. Damjan Krelov",
+        "email": "damjan.krelov@bsmu.edu.rs"
       },
       "rectorAdvisor": {
         "position": "Rektör Danışmanı",
-        "name": "Milena Zaworska",
-        "email": "milena.zaworska@bsmu.edu.rs"
+        "name": "Dr. Elira Kostanova",
+        "email": "elira.kostanova@bsmu.edu.rs"
       },
       "secretaryGeneral": {
         "position": "Genel Sekreter",
-        "name": "Martin Dravoski",
-        "email": "martin.dravoski@bsmu.edu.rs"
+        "name": "Dr. Jovik Terzan",
+        "email": "jovik.terzan@bsmu.edu.rs"
+      },
+      "officeDirector": {
+        "position": "Ofis Müdürü",
+        "name": "Berilay Korhan",
+        "email": "berilay.korhan@bsmu.edu.rs"
       }
     }
   },

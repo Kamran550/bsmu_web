@@ -199,12 +199,12 @@
         "title": "Профиль Ректора",
         "fullName": "Полное имя",
         "position": "Должность",
-        "fullNameValue": "Проф. Д-р Сердар Корал",
+        "fullNameValue": "Проф. Д-р Elira Kostanova",
         "positionValue": "Ректор Балканского Университета Науки и Управления (BSMU)",
         "description": "Проф. Д-р Сердар Корал - всемирно уважаемый ученый, лидер высшего образования и сторонник совершенства в науке и управлении. С карьерой, охватывающей более двух десятилетий на нескольких континентах, он привносит в Балканский Университет Науки и Управления (BSMU) уникальное сочетание академического превосходства, глобального видения и глубокой приверженности формированию следующего поколения социально ответственных лидеров.",
         "qualifications": "Д-р Корал имеет докторскую степень в области политологии и международных отношений со специализацией в исследованиях мира и конфликтов, глобальной дипломатии и межкультурной коммуникации. Он занимал академические и административные должности в известных учреждениях в Европе, Центральной Азии и на Ближнем Востоке. Его академический путь отмечен постоянным фокусом на продвижении диалога, критического мышления и этического лидерства в высшем образовании.",
         "email": "Электронная почта",
-        "emailValue": "serdar.koral@bsmu.edu.rs"
+        "emailValue": "elira.kostanova@bsmu.edu.rs"
       },
       "welcomeMessage": {
         "title": "Приветственное послание от Ректора",
@@ -227,18 +227,23 @@
       "subtitle": "Познакомьтесь с нашей преданной административной командой, стремящейся к совершенству и служению",
       "viceRector": {
         "position": "Проректор",
-        "name": "Marlene Treiblach",
-        "email": "marlene.treiblach@bsmu.edu.rs"
+        "name": "Prof Dr. Damjan Krelov",
+        "email": "damjan.krelov@bsmu.edu.rs"
       },
       "rectorAdvisor": {
         "position": "Советник Ректора",
-        "name": "Milena Zaworska",
-        "email": "milena.zaworska@bsmu.edu.rs"
+        "name": "Dr. Elira Kostanova",
+        "email": "elira.kostanova@bsmu.edu.rs"
       },
       "secretaryGeneral": {
         "position": "Генеральный секретарь",
         "name": "Martin Dravoski",
-        "email": "martin.dravoski@bsmu.edu.rs"
+        "email": "jovik.terzan@bsmu.edu.rs"
+      },
+      "officeDirector": {
+        "position": "Директор офиса",
+        "name": "Berilay Korhan",
+        "email": "berilay.korhan@bsmu.edu.rs"
       }
     }
   },

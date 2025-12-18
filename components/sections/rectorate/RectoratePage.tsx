@@ -13,9 +13,9 @@ export default function RectoratePage() {
   );
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 dark:from-slate-950 dark:via-black dark:to-slate-950 font-sans pt-24 pb-20">
+    <main className="min-h-screen bg-linear-to-b from-slate-50 via-white to-slate-50 dark:from-slate-950 dark:via-black dark:to-slate-950 font-sans pt-24 pb-20">
       {/* Hero Section */}
-      <div className="relative bg-gradient-to-r from-primary/10 via-primary/5 to-transparent dark:from-primary/20 dark:via-primary/10 border-b border-gray-200/50 dark:border-slate-800/50">
+      <div className="relative bg-linear-to-r from-primary/10 via-primary/5 to-transparent dark:from-primary/20 dark:via-primary/10 border-b border-gray-200/50 dark:border-slate-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -62,7 +62,7 @@ export default function RectoratePage() {
               {activeTab === "profile" && (
                 <motion.div
                   layoutId="activeTab"
-                  className="absolute inset-0 bg-gradient-to-r from-primary to-primary/80 rounded-lg"
+                  className="absolute inset-0 bg-linear-to-r from-primary to-primary/80 rounded-lg"
                   transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                 />
               )}
@@ -105,17 +105,17 @@ export default function RectoratePage() {
               >
                 <div className="lg:flex">
                   {/* Rector Image */}
-                  <div className="lg:w-2/5 bg-gradient-to-br from-primary/5 via-primary/10 to-primary/5 dark:from-primary/10 dark:via-primary/20 dark:to-primary/10 p-12 flex items-center justify-center relative overflow-hidden">
+                  <div className="lg:w-2/5 bg-linear-to-br from-primary/5 via-primary/10 to-primary/5 dark:from-primary/10 dark:via-primary/20 dark:to-primary/10 p-12 flex items-center justify-center relative overflow-hidden">
                     <div className="relative z-10 w-full max-w-md">
                       <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl ring-4 ring-white/50 dark:ring-slate-800/50">
                         <Image
-                          src="/images/rector.png"
+                          src="/images/rector.jpeg"
                           alt={t("profile.fullNameValue")}
                           fill
                           className="object-cover"
                           priority
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                        <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent"></div>
                       </div>
                       <div className="mt-6 text-center">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-full shadow-lg">
