@@ -36,16 +36,16 @@
     "secondaryButton": "Programlarımızı Keşfet",
     "badge": "2025 Güz Dönemi Başvuruları Açıldı",
     "stats": {
-      "yearsExperience": "İllik Təcrübə",
+      "yearsExperience": "Yıllık Deneyim",
       "excellence": "Mükemmellik",
-      "countries": "Ölkə",
-      "students": "Tələbələr"
+      "countries": "Ülke",
+      "students": "Öğrenciler"
     },
     "cards": {
       "academic": "Akademik",
       "academicExcellence": "Mükemmellik",
       "innovation": "İnnovasiya",
-      "andLeadership": "və Liderlik"
+      "andLeadership": "ve Liderlik"
     }
   },
   "aboutPreview": {
@@ -53,7 +53,7 @@
     "description": "Balkan Bilim ve Yönetim Üniversitesi, titiz bilimsel eğitimi yenilikçi yönetim uygulamalarıyla birleştiren akademik mükemmelliğin bir simgesi olarak duruyor. Kurumumuz, öğrencileri küresel zorluklarla başa çıkmaya hazır ileri görüşlü profesyoneller olmalarını sağlıyor.",
     "button": "Daha Fazla Keşfet",
     "badge": "Akademik Mükemmellik",
-    "yearsExperience": "25+ İllik Təcrübə"
+    "yearsExperience": "25+ Yıllık Deneyim"
   },
   "statistics": {
     "title": "BSMU Rakamlarla",
