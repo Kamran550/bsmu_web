@@ -201,7 +201,7 @@
         "position": "Position",
         "fullNameValue": "Prof. Dr. Eraytun Koralmaz",
         "positionValue": "Rector of Balkan Science and Management University (BSMU)",
-        "description": "Prof. Dr. Eraytun Koralmaz is an internationally respected academic, higher education leader, and advocate for excellence in science and management education. With a career spanning more than two decades across multiple continents, he brings to the Balkan Science and Management University (BSMU) a unique blend of academic excellence, global vision, and a deep commitment to shaping the next generation of socially responsible leaders.",
+        "description": "Prof. Dr. Eraytun Koralmaz is a distinguished academic with extensive experience in the field of higher education and institutional leadership. Throughout his career, he has actively contributed to academic development, participated in national and international projects, and published in respected journals within his area of expertise. Before his appointment as Rector, Prof. Dr. Koralmaz held various academic and administrative positions, including lecturer, department head, and vice-rector. His professional journey reflects a strong commitment to academic excellence, innovation, and effective university governance. As the Rector of Balkan Science and Management University, he envisions a modern, globally connected institution that prioritizes quality education, international partnerships, student-centered learning, and continuous development of academic staff. Prof. Dr. Koralmaz is dedicated to fostering an inclusive, transparent, and forward-thinking academic environment that prepares students for the challenges of the future.",
         "qualifications": "Dr. Koralmaz holds a Ph.D. in Political Science and International Relations, with specializations in science and management studies, global diplomacy, and intercultural communication. He has held academic and administrative positions at renowned institutions in Europe, Central Asia, and the Middle East. His academic journey is marked by a consistent focus on promoting dialogue, critical thinking, and ethical leadership in higher education.",
         "email": "Email",
         "emailValue": "eraytun.koralmaz@bsmu.edu.rs"
@@ -209,12 +209,12 @@
       "welcomeMessage": {
         "title": "Welcome Message from the Rector",
         "greeting": "Dear Students, Faculty, and Staff,",
-        "paragraph1": "Welcome to our university! It is my great honor to greet you at the beginning of a new academic journey. Our institution is committed to providing a supportive, innovative, and inclusive environment where everyone can grow intellectually and personally.",
-        "paragraph2": "We believe that education is not just about gaining knowledge, but also about developing critical thinking, creativity, and a sense of responsibility to society. As you embark on this journey, I encourage you to take full advantage of the opportunities available, engage actively with your community, and strive for excellence in all that you do.",
-        "paragraph3": "Together, we will work towards building a brighter future through learning, research, and collaboration. I am confident that your time here will be both rewarding and inspiring.",
-        "closing": "Wishing you success and fulfillment in your studies and beyond.",
+        "paragraph1": "At Balkan Science and Management University, we are shaping the leaders of tomorrow — and I am proud to lead this mission. As Rector, I bring with me years of experience in higher education, research, and international collaboration. My journey has been guided by a passion for innovation, academic excellence, and student success. From teaching and leading departments to managing strategic partnerships, I’ve always believed in building a learning environment that is both forward-thinking and student-focused.",
+        "paragraph2": "Our university is more than just a place of learning — it is a space for discovery, growth, and global connection. We aim to equip our students not just with knowledge, but with the skills and mindset to thrive in an ever-changing world.",
+        "paragraph3": "Together with our faculty, staff, and partners around the world, we are committed to creating an inclusive, modern, and dynamic university experience.",
+        "closing": "Welcome to a new era of education. Welcome to Balkan Science and Management University.",
         "signature": "Sincerely,",
-        "signatureName": "Prof. Dr. Elira Kostanova",
+        "signatureName": "Prof. Dr. Eraytun Koralmaz",
         "signatureTitle": "Rector"
       },
       "tabs": {
@@ -241,7 +241,7 @@
         "email": "jovik.terzan@bsmu.edu.rs"
       },
       "officeDirector": {
-        "position": "Office Director",
+        "position": "Director of International Office",
         "name": "Berilay Korhan",
         "email": "berilay.korhan@bsmu.edu.rs"
       }
