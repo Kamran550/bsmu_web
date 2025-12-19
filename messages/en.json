@@ -201,8 +201,8 @@
         "position": "Position",
         "fullNameValue": "Prof. Dr. Eraytun Koralmaz",
         "positionValue": "Rector of Balkan Science and Management University (BSMU)",
-        "description": "Prof. Dr. Eraytun Koralmaz is a distinguished academic with extensive experience in the field of higher education and institutional leadership. Throughout his career, he has actively contributed to academic development, participated in national and international projects, and published in respected journals within his area of expertise. Before his appointment as Rector, Prof. Dr. Koralmaz held various academic and administrative positions, including lecturer, department head, and vice-rector. His professional journey reflects a strong commitment to academic excellence, innovation, and effective university governance. As the Rector of Balkan Science and Management University, he envisions a modern, globally connected institution that prioritizes quality education, international partnerships, student-centered learning, and continuous development of academic staff. Prof. Dr. Koralmaz is dedicated to fostering an inclusive, transparent, and forward-thinking academic environment that prepares students for the challenges of the future.",
-        "qualifications": "Dr. Koralmaz holds a Ph.D. in Political Science and International Relations, with specializations in science and management studies, global diplomacy, and intercultural communication. He has held academic and administrative positions at renowned institutions in Europe, Central Asia, and the Middle East. His academic journey is marked by a consistent focus on promoting dialogue, critical thinking, and ethical leadership in higher education.",
+        "description": "Профессор доктор Эрайтун Коралмаз — выдающийся учёный с обширным опытом работы в сфере высшего образования и управления учебным заведением. На протяжении своей карьеры он активно участвовал в развитии академической среды, принимал участие в национальных и международных проектах и ​​публиковался в авторитетных журналах в своей области знаний. До назначения ректором профессор доктор Коралмаз занимал различные академические и административные должности, включая преподавателя, заведующего кафедрой и проректора. Его профессиональный путь отражает твердую приверженность академическому совершенству, инновациям и эффективному управлению университетом. В качестве ректора Балканского университета науки и управления он видит современное, глобально связанное учреждение, которое ставит во главу угла качественное образование, международное партнерство, обучение, ориентированное на студентов, и непрерывное развитие преподавательского состава. Профессор доктор Коралмаз стремится к созданию инклюзивной, прозрачной и прогрессивной академической среды, которая готовит студентов к вызовам будущего.",
+        "qualifications": "Доктор Коралмаз имеет докторскую степень в области политологии и международных отношений и специализируется на исследованиях в области науки и управления, глобальной дипломатии и межкультурной коммуникации. Она занимала академические и административные должности в известных учреждениях Европы, Центральной Азии и Ближнего Востока. Ее академическая карьера характеризуется неизменным стремлением к развитию диалога, критического мышления и этического лидерства в высшем образовании.",
         "email": "Email",
         "emailValue": "eraytun.koralmaz@bsmu.edu.rs"
       },
@@ -232,7 +232,7 @@
       },
       "rectorAdvisor": {
         "position": "Rector Advisor",
-        "name": "Dr. Elira Kostanova",
+        "name": "Prof. Dr. Elira Kostanova",
         "email": "elira.kostanova@bsmu.edu.rs"
       },
       "secretaryGeneral": {
