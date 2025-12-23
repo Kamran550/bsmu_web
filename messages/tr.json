@@ -23,7 +23,6 @@
     "about": "Hakkımızda",
     "rectorate": "Rektörlük",
     "administrativeUnits": "İdari Birimler",
-    "eLibrary": "E-Kütüphane",
     "fees": "Ücretler",
     "programs": "Programlar",
     "news": "Haberler",
@@ -642,7 +641,9 @@
       "programs": "Programlar",
       "fees": "Ücretler",
       "contact": "İletişim",
-      "apply": "Başvur"
+      "apply": "Başvur",
+      "eLibrary": "E-Kütüphane"
+
     },
     "universityLinks": {
       "academicPrograms": "Akademik Programlar",

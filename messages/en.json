@@ -23,7 +23,6 @@
     "about": "About",
     "rectorate": "Rectorate",
     "administrativeUnits": "Administrative Units",
-    "eLibrary": "E-Library",
     "fees": "Fees",
     "programs": "Programs",
     "news": "News",
@@ -642,7 +641,9 @@
       "programs": "Programs",
       "fees": "Fees",
       "contact": "Contact",
-      "apply": "Apply"
+      "apply": "Apply",
+      "eLibrary": "E-Library"
+
     },
     "universityLinks": {
       "academicPrograms": "Academic Programs",
