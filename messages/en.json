@@ -23,6 +23,7 @@
     "about": "About",
     "rectorate": "Rectorate",
     "administrativeUnits": "Administrative Units",
+    "eLibrary": "E-Library",
     "fees": "Fees",
     "programs": "Programs",
     "news": "News",
@@ -821,6 +822,17 @@
       "submit": "Submit Application",
       "submitSuccess": "Application submitted successfully!",
       "submitError": "Failed to submit application. Please try again."
+    }
+  },
+  "eLibrary": {
+    "hero": {
+      "title": "E-Library",
+      "subtitle": "Access a world of knowledge through our extensive collection of digital resources, academic databases, and open-access libraries."
+    },
+    "logos": {
+      "title": "Our Library Partners",
+      "subtitle": "Explore our partnerships with leading academic libraries and open-access resources",
+      "allLibraries": "All Library Resources"
     }
   }
 }

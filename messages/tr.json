@@ -23,6 +23,7 @@
     "about": "Hakkımızda",
     "rectorate": "Rektörlük",
     "administrativeUnits": "İdari Birimler",
+    "eLibrary": "E-Kütüphane",
     "fees": "Ücretler",
     "programs": "Programlar",
     "news": "Haberler",
@@ -821,6 +822,17 @@
       "submit": "Başvuruyu Gönder",
       "submitSuccess": "Başvuru başarıyla gönderildi!",
       "submitError": "Başvuru gönderilemedi. Lütfen tekrar deneyin."
+    }
+  },
+  "eLibrary": {
+    "hero": {
+      "title": "E-Kütüphane",
+      "subtitle": "Geniş dijital kaynak koleksiyonumuz, akademik veritabanlarımız ve açık erişimli kütüphanelerimiz aracılığıyla bilgi dünyasına erişin."
+    },
+    "logos": {
+      "title": "Kütüphane Ortaklarımız",
+      "subtitle": "Önde gelen akademik kütüphaneler ve açık erişimli kaynaklarla ortaklıklarımızı keşfedin",
+      "allLibraries": "Tüm Kütüphane Kaynakları"
     }
   }
 }
