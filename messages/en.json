@@ -34,7 +34,7 @@
     "subtitle": "Join a vibrant academic community dedicated to innovation and leadership. Begin your journey at BSMU and unlock your potential. Applications for Fall 2025 are now open.",
     "primaryButton": "Start Your Application",
     "secondaryButton": "Discover Our Programs",
-    "badge": "Fall 2025 Applications Now Open",
+    "badge": "Spring 2026 Applications Now Open",
     "stats": {
       "yearsExperience": "Years of Experience",
       "excellence": "Excellence",
@@ -245,7 +245,6 @@
         "name": "Berilay Korhan",
         "email": "berilay.korhan@bsmu.edu.rs"
       }
-
     }
   },
   "fees": {
@@ -643,7 +642,6 @@
       "contact": "Contact",
       "apply": "Apply",
       "eLibrary": "E-Library"
-
     },
     "universityLinks": {
       "academicPrograms": "Academic Programs",
@@ -742,6 +740,7 @@
       "faculty": "Faculty",
       "required": "Required field",
       "invalidEmail": "Invalid email address",
+      "emailTaken": "This email address is already associated with a student application in our system. If you believe this is an error, please contact our support team or use a different email address.",
       "submitting": "Submitting...",
       "submit": "Submit Application",
       "submitSuccess": "Application submitted successfully!",
@@ -795,6 +794,7 @@
       "faculty": "Faculty",
       "required": "Required field",
       "invalidEmail": "Invalid email address",
+      "emailTaken": "This email address is already associated with a transfer application in our system. If you believe this is an error, please contact our support team or use a different email address.",
       "submitting": "Submitting...",
       "submit": "Submit Application",
       "submitSuccess": "Application submitted successfully!",

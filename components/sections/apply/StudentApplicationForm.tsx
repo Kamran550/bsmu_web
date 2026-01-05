@@ -269,6 +269,52 @@ export default function StudentApplicationForm({
       if (!response.ok) {
         const errorData = await response.json();
         console.error("❌ Error response:", errorData);
+
+        // Handle validation errors (422)
+        if (response.status === 422 && errorData.errors) {
+          const errors = errorData.errors;
+
+          // Check for email unique error
+          if (errors.email && Array.isArray(errors.email)) {
+            const emailError = errors.email.find(
+              (err: string) =>
+                err.toLowerCase().includes("already been taken") ||
+                err.toLowerCase().includes("already taken")
+            );
+
+            if (emailError) {
+              form.setError("email", {
+                type: "manual",
+                message: t("emailTaken"),
+              });
+              return; // Stop execution, error is set on form field
+            }
+          }
+
+          // Handle other validation errors (only email for now, can be extended)
+          // Other field errors will be shown via the general error message
+          if (
+            errors.email &&
+            Array.isArray(errors.email) &&
+            errors.email.length > 0
+          ) {
+            const emailError = errors.email[0];
+            // Only set if it's not the unique error (already handled above)
+            if (
+              !emailError.toLowerCase().includes("already been taken") &&
+              !emailError.toLowerCase().includes("already taken")
+            ) {
+              form.setError("email", {
+                type: "manual",
+                message: emailError,
+              });
+            }
+          }
+
+          return; // Stop execution, errors are set on form fields
+        }
+
+        // For other errors, throw as before
         throw new Error(errorData.message || "Failed to submit application");
       }
 
@@ -285,11 +331,14 @@ export default function StudentApplicationForm({
       }, 3000);
     } catch (error) {
       console.error("❌ Error submitting application:", error);
-      alert(
-        `Failed to submit application: ${
-          error instanceof Error ? error.message : "Unknown error"
-        }`
-      );
+      // Only show alert for non-validation errors
+      if (!(error instanceof Error && error.message.includes("422"))) {
+        alert(
+          `Failed to submit application: ${
+            error instanceof Error ? error.message : "Unknown error"
+          }`
+        );
+      }
     }
   }
 

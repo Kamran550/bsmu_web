@@ -13,8 +13,8 @@ const contactInfo = {
   },
   email: {
     primary: "info@bsmu.edu.rs",
-    admissions: "admissions@bsmu.edu.rs",
-    support: "support@bsmu.edu.rs",
+    admissions: "international@bsmu.edu.rs",
+    support: "rectorate@bsmu.edu.rs",
   },
   address: {
     street: "ul. Krakowska 23",
@@ -24,7 +24,7 @@ const contactInfo = {
   },
   hours: {
     weekdays: "Monday - Friday: 9:00 AM - 6:00 PM",
-    saturday: "Saturday: 10:00 AM - 4:00 PM",
+    saturday: "Saturday: Closed",
     sunday: "Sunday: Closed",
   },
 };
@@ -196,7 +196,6 @@ export default function ContactInfo() {
                 <h3 className="text-xl font-bold">{t("officeHours")}</h3>
               </div>
               <div className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-                <p>{t("hours.weekdays")}</p>
                 <p>{t("hours.saturday")}</p>
                 <p className="text-muted-foreground">{t("hours.sunday")}</p>
               </div>
