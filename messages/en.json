@@ -628,10 +628,7 @@
     "contact": "Contact",
     "university": "University",
     "phoneNumbers": {
-      "serbia": "Serbia",
-      "azerbaijan": "Azerbaijan",
-      "luxembourg": "Luxembourg",
-      "turkey": "Türkiye",
+      "belgium": "Belgium",
       "global": "Global"
     },
     "linesAreOpen": "Lines are open: Monday – Friday 9:00am - 6:00 pm",

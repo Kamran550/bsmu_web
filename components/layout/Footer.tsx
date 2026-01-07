@@ -8,14 +8,11 @@ import { useTranslations } from "next-intl";
 
 const contactInfo = {
   phones: {
-    serbia: "+381 11 234 5678",
-    azerbaijan: "+994 504975252",
-    luxembourg: "+352 661115815",
-    turkey: "+90 538 6796595",
+    belgium: "+32 483 38 31 70",
     global: "+49 15207108026",
   },
   email: "info@bsmu.edu.rs",
-  address: "Belgrade, Serbia",
+  address: "Tošin bunar 272, 11070 Novi Beograd, Belgrade / Serbia",
 };
 
 export function Footer() {
@@ -95,59 +92,16 @@ export function Footer() {
                 <div className="space-y-2 flex-1">
                   <div>
                     <span className="text-gray-500 text-xs font-medium block mb-0.5">
-                      {tPhoneNumbers("turkey")}:
+                      {tPhoneNumbers("belgium")}:
                     </span>
                     <a
-                      href={`tel:${contactInfo.phones.turkey.replace(
+                      href={`tel:${contactInfo.phones.belgium.replace(
                         /\s/g,
                         ""
                       )}`}
                       className="text-gray-400 hover:text-white transition-colors text-sm md:text-base"
                     >
-                      {contactInfo.phones.turkey}
-                    </a>
-                  </div>
-
-                  <div>
-                    <span className="text-gray-500 text-xs font-medium block mb-0.5">
-                      {tPhoneNumbers("serbia")}:
-                    </span>
-                    <a
-                      href={`tel:${contactInfo.phones.serbia.replace(
-                        /\s/g,
-                        ""
-                      )}`}
-                      className="text-gray-400 hover:text-white transition-colors text-sm md:text-base"
-                    >
-                      {contactInfo.phones.serbia}
-                    </a>
-                  </div>
-                  <div>
-                    <span className="text-gray-500 text-xs font-medium block mb-0.5">
-                      {tPhoneNumbers("azerbaijan")}:
-                    </span>
-                    <a
-                      href={`tel:${contactInfo.phones.azerbaijan.replace(
-                        /\s/g,
-                        ""
-                      )}`}
-                      className="text-gray-400 hover:text-white transition-colors text-sm md:text-base"
-                    >
-                      {contactInfo.phones.azerbaijan}
-                    </a>
-                  </div>
-                  <div>
-                    <span className="text-gray-500 text-xs font-medium block mb-0.5">
-                      {tPhoneNumbers("luxembourg")}:
-                    </span>
-                    <a
-                      href={`tel:${contactInfo.phones.luxembourg.replace(
-                        /\s/g,
-                        ""
-                      )}`}
-                      className="text-gray-400 hover:text-white transition-colors text-sm md:text-base"
-                    >
-                      {contactInfo.phones.luxembourg}
+                      {contactInfo.phones.belgium}
                     </a>
                   </div>
                   <div>

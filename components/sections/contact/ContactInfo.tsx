@@ -7,8 +7,8 @@ import { useTranslations } from "next-intl";
 
 const contactInfo = {
   phone: {
-    primary: "+381 11 234 5678",
-    secondary: "+381 11 234 5678",
+    primary: "+32 483 38 31 70",
+    secondary: "+32 483 38 31 70",
     hours: "Mon-Fri: 9:00 AM - 6:00 PM",
   },
   email: {
@@ -18,7 +18,7 @@ const contactInfo = {
   },
   address: {
     street: "ul. Krakowska 23",
-    city: "Belgrade, Serbia",
+    city: "Tošin bunar 272, 11070 Novi Beograd, Belgrade / Serbia",
     zip: "00-000",
     country: "Serbia",
   },

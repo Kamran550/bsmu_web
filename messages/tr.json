@@ -628,11 +628,7 @@
     "contact": "İletişim",
     "university": "Üniversite",
     "phoneNumbers": {
-      "serbia": "Sırbistan",
-      "azerbaijan": "Azerbaycan",
-      "luxembourg": "Luxembourg",
-      "germany": "Almanya",
-      "turkey": "Türkiye",
+      "belgium": "Belçika",
       "global": "Küresel"
     },
     "linesAreOpen": "Hizmet verilen gün ve saatler: Pazartesi – Cuma 9:00 - 18:00",
@@ -643,7 +639,6 @@
       "contact": "İletişim",
       "apply": "Başvur",
       "eLibrary": "E-Kütüphane"
-
     },
     "universityLinks": {
       "academicPrograms": "Akademik Programlar",

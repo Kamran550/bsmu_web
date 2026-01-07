@@ -628,11 +628,7 @@
     "contact": "Контакты",
     "university": "Университет",
     "phoneNumbers": {
-      "serbia": "Сербия",
-      "azerbaijan": "Азербайджан",
-      "luxembourg": "Люксембург",
-      "germany": "Германия",
-      "turkey": "Турция",
+      "belgium": "Белгия",
       "global": "Глобальный"
     },
     "linesAreOpen": "Офис продаж открыт: Понедельник - Пятница 9:00 - 18:00",
