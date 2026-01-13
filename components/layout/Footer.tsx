@@ -9,10 +9,11 @@ import { useTranslations } from "next-intl";
 const contactInfo = {
   phones: {
     belgium: "+32 483 38 31 70",
+    turkey: "+90 505 621 26 26",
     global: "+49 15207108026",
   },
   email: "info@bsmu.edu.rs",
-  address: "Tošin bunar 272, 11070 Novi Beograd, Belgrade / Serbia",
+  address: "Jurija Gagarina 12, 11070, Beograd, Serbia",
 };
 
 export function Footer() {
@@ -104,6 +105,21 @@ export function Footer() {
                       {contactInfo.phones.belgium}
                     </a>
                   </div>
+                  <div>
+                    <span className="text-gray-500 text-xs font-medium block mb-0.5">
+                      {tPhoneNumbers("turkey")}:
+                    </span>
+                    <a
+                      href={`tel:${contactInfo.phones.turkey.replace(
+                        /\s/g,
+                        ""
+                      )}`}
+                      className="text-gray-400 hover:text-white transition-colors text-sm md:text-base"
+                    >
+                      {contactInfo.phones.turkey}
+                    </a>
+                  </div>
+
                   <div>
                     <span className="text-gray-500 text-xs font-medium block mb-0.5">
                       {tPhoneNumbers("global")}:

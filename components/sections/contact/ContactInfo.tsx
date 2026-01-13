@@ -17,8 +17,7 @@ const contactInfo = {
     support: "rectorate@bsmu.edu.rs",
   },
   address: {
-    street: "ul. Krakowska 23",
-    city: "Tošin bunar 272, 11070 Novi Beograd, Belgrade / Serbia",
+    city: "Jurija Gagarina 12, 11070, Beograd, Serbia",
     zip: "00-000",
     country: "Serbia",
   },
@@ -168,7 +167,6 @@ export default function ContactInfo() {
                     {t("address")}
                   </h3>
                   <div className="space-y-1 text-gray-600 dark:text-gray-300">
-                    <p className="font-medium">{contactInfo.address.street}</p>
                     <p>{contactInfo.address.city}</p>
                     <p className="text-sm">{contactInfo.address.zip}</p>
                     <p className="text-sm font-semibold mt-2">

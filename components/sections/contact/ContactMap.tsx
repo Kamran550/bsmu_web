@@ -8,14 +8,14 @@ import { useTranslations } from "next-intl";
 
 export default function ContactMap() {
   const t = useTranslations("contact.map");
-  // Google Maps embed URL for ul. Krakowska 23, 00-000 Belgrade, Serbia
+  // Google Maps embed URL for Jurija Gagarina 12, 11070, Beograd, Serbia
   const mapEmbedUrl =
-    "https://maps.google.com/maps?q=ul.+Krakowska+23,00-000+Belgrade,Serbia&t=&z=15&ie=UTF8&iwloc=&output=embed";
+    "https://maps.google.com/maps?q=Jurija+Gagarina+12,+11070,+Beograd,+Serbia&t=&z=15&ie=UTF8&iwloc=&output=embed";
 
   const address = {
-    full: "ul. Krakowska 23, 00-000 Belgrade, Serbia",
+    full: "Jurija Gagarina 12, 11070, Beograd, Serbia",
     googleMapsUrl:
-      "https://www.google.com/maps/place/ul.+Krakowska+23,00-000+Belgrade,Serbia",
+      "https://www.google.com/maps/place/Jurija+Gagarina+12,+11070,+Beograd,+Serbia",
   };
 
   return (

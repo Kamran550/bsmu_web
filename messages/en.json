@@ -628,7 +628,8 @@
     "contact": "Contact",
     "university": "University",
     "phoneNumbers": {
-      "belgium": "Belgium",
+      "belgium": "Belgium", 
+      "turkey": "Turkey",
       "global": "Global"
     },
     "linesAreOpen": "Lines are open: Monday – Friday 9:00am - 6:00 pm",
