@@ -15,7 +15,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   // Əsas məlumatlar
   title: {
-    default: "BSMU - Balkan Science and Management University | Study in Serbia",
+    default:
+      "BSMU - Balkan Science and Management University | Study in Serbia",
     template: "%s | BSMU - Balkan Science and Management University",
   },
   description:
@@ -25,14 +26,13 @@ export const metadata: Metadata = {
   keywords: [
     "BSMU",
     "bsmu",
-    "Balkan Science and Management University",
     "bsmu.edu.rs",
+    "Balkan Science and Management University",
     "Serbia university",
     "Serbian university",
     "international university Serbia",
     "international university",
     "science and management university",
-    "Serbian university",
     "study in Serbia",
     "education in Serbia",
     "PhD Serbia",
@@ -42,6 +42,9 @@ export const metadata: Metadata = {
     "master degree Serbia",
     "master programs in Serbia",
     "doctoral programs in Serbia",
+    "Belgrade university",
+    "European university",
+    "Serbia education",
   ],
 
   // Müəllif və yaradıcı
@@ -109,12 +112,7 @@ export const metadata: Metadata = {
     site: "@bsmu_edu",
   },
 
-  // Verification (Google Search Console, Bing, etc.)
-  verification: {
-    google: "", // Google Search Console-dan alınacaq
-    // yandex: "YOUR_YANDEX_CODE",
-    // bing: "YOUR_BING_CODE",
-  },
+  // Verification - Domain ilə verification edilib, kod lazım deyil
 
   // Category
   category: "education",
@@ -127,7 +125,11 @@ export const metadata: Metadata = {
       { url: "/images/BSMU-logo-dark.png", sizes: "16x16", type: "image/png" },
     ],
     apple: [
-      { url: "/images/BSMU-logo-dark.png", sizes: "180x180", type: "image/png" },
+      {
+        url: "/images/BSMU-logo-dark.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
     ],
     shortcut: "/images/BSMU-logo-dark.png",
   },
@@ -139,7 +141,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

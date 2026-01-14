@@ -20,6 +20,8 @@ const seoData: Record<
       "BSMU - Balkan Science and Management University. International education in Serbia with bachelor's, master's and PhD programs. Quality education through science and management.",
     keywords: [
       "BSMU",
+      "bsmu",
+      "bsmu.edu.rs",
       "Balkan Science and Management University",
       "study in Serbia",
       "international university",
@@ -30,7 +32,7 @@ const seoData: Record<
       "Serbian university",
       "science and management",
       "Belgrade university",
-      "Serbian university",
+      "European university",
     ],
   },
   ru: {
@@ -40,6 +42,8 @@ const seoData: Record<
       "BSMU - Балканский Университет Науки и Управления. Международное образование в Сербии с программами бакалавриата, магистратуры и докторантуры. Качественное образование через науку и управление.",
     keywords: [
       "BSMU",
+      "bsmu",
+      "bsmu.edu.rs",
       "Балканский Университет Науки и Управления",
       "Образование в Сербии",
       "Обучение в Сербии",
@@ -59,6 +63,8 @@ const seoData: Record<
       "BSMU - Balkan Bilim ve Yönetim Üniversitesi. Sırbistan'da lisans, yüksek lisans ve doktora programları ile uluslararası eğitim. Bilim ve yönetim yoluyla kaliteli eğitim.",
     keywords: [
       "BSMU",
+      "bsmu",
+      "bsmu.edu.rs",
       "Balkan Bilim ve Yönetim Üniversitesi",
       "Sırbistan'da eğitim",
       "Sırbistan'da okumak",
@@ -81,11 +87,34 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const seo = seoData[locale] || seoData.en;
+  const baseUrl = "https://bsmu.edu.rs";
+  const ogLocale = locale === "ru" ? "ru_RU" : locale === "tr" ? "tr_TR" : "en_US";
+  const alternateLocales = ["en_US", "ru_RU", "tr_TR"].filter((l) => l !== ogLocale);
 
   return {
+    metadataBase: new URL(baseUrl),
     title: seo.title,
     description: seo.description,
     keywords: seo.keywords,
+    authors: [
+      {
+        name: "Balkan Science and Management University",
+        url: baseUrl,
+      },
+    ],
+    creator: "Balkan Science and Management University",
+    publisher: "Balkan Science and Management University",
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
     icons: {
       icon: [
         { url: "/images/BSMU-logo-dark.png", sizes: "any", type: "image/png" },
@@ -110,18 +139,39 @@ export async function generateMetadata({
       shortcut: "/images/BSMU-logo-dark.png",
     },
     alternates: {
-      canonical: `https://bsmu.edu.rs/${locale}`,
+      canonical: `${baseUrl}/${locale}`,
       languages: {
-        en: "https://bsmu.edu.rs/en",
-        ru: "https://bsmu.edu.rs/ru",
-        tr: "https://bsmu.edu.rs/tr",
+        en: `${baseUrl}/en`,
+        ru: `${baseUrl}/ru`,
+        tr: `${baseUrl}/tr`,
       },
     },
     openGraph: {
-      locale: locale === "ru" ? "ru_RU" : locale === "tr" ? "tr_TR" : "en_US",
+      type: "website",
+      locale: ogLocale,
+      alternateLocale: alternateLocales,
+      url: `${baseUrl}/${locale}`,
+      siteName: "Balkan Science and Management University",
       title: seo.title,
       description: seo.description,
+      images: [
+        {
+          url: "/images/BSMU-logo-dark.png",
+          width: 1200,
+          height: 630,
+          alt: "Balkan Science and Management University Logo",
+        },
+      ],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: seo.title,
+      description: seo.description,
+      images: ["/images/BSMU-logo-dark.png"],
+      creator: "@bsmu_edu",
+      site: "@bsmu_edu",
+    },
+    category: "education",
   };
 }
 
