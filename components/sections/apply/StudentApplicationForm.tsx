@@ -56,6 +56,8 @@ export default function StudentApplicationForm({
     if (degreeId === 1) return DegreeType.Bachelor;
     if (degreeId === 2) return DegreeType.Master;
     if (degreeId === 3) return DegreeType.PhD;
+    if (degreeId === 4) return DegreeType.MasterWithoutThesis;
+
     throw new Error("Degree type not found");
   }
 
@@ -90,7 +92,7 @@ export default function StudentApplicationForm({
     educationDocuments.high_school_transcript = z
       .any()
       .refine((file) => file?.length > 0, t("required"));
-  } else if (degreeType === DegreeType.Master) {
+  } else if (degreeType === DegreeType.Master || degreeType === DegreeType.MasterWithoutThesis) {
     educationDocuments.bachelor_diploma = z.any().optional();
     educationDocuments.bachelor_transcript = z
       .any()
@@ -142,7 +144,7 @@ export default function StudentApplicationForm({
         const data = await ProgramService.getByDegreeAndFaculty(
           degreeId,
           facultyId,
-          teachingLanguage
+          teachingLanguage,
         );
         setPrograms(data);
       } catch (error) {
@@ -199,7 +201,7 @@ export default function StudentApplicationForm({
         )
           formData.append(
             "high_school_diploma",
-            formData_any.high_school_diploma[0]
+            formData_any.high_school_diploma[0],
           );
         if (
           formData_any.high_school_transcript?.length > 0 &&
@@ -207,9 +209,9 @@ export default function StudentApplicationForm({
         )
           formData.append(
             "high_school_transcript",
-            formData_any.high_school_transcript[0]
+            formData_any.high_school_transcript[0],
           );
-      } else if (degreeType === DegreeType.Master) {
+      } else if (degreeType === DegreeType.Master || degreeType === DegreeType.MasterWithoutThesis) {
         if (
           formData_any.bachelor_diploma?.length > 0 &&
           formData_any.bachelor_diploma[0]
@@ -221,7 +223,7 @@ export default function StudentApplicationForm({
         )
           formData.append(
             "bachelor_transcript",
-            formData_any.bachelor_transcript[0]
+            formData_any.bachelor_transcript[0],
           );
       } else if (degreeType === DegreeType.PhD) {
         if (
@@ -235,7 +237,7 @@ export default function StudentApplicationForm({
         )
           formData.append(
             "bachelor_transcript",
-            formData_any.bachelor_transcript[0]
+            formData_any.bachelor_transcript[0],
           );
         if (
           formData_any.master_diploma?.length > 0 &&
@@ -248,7 +250,7 @@ export default function StudentApplicationForm({
         )
           formData.append(
             "master_transcript",
-            formData_any.master_transcript[0]
+            formData_any.master_transcript[0],
           );
       }
 
@@ -279,7 +281,7 @@ export default function StudentApplicationForm({
             const emailError = errors.email.find(
               (err: string) =>
                 err.toLowerCase().includes("already been taken") ||
-                err.toLowerCase().includes("already taken")
+                err.toLowerCase().includes("already taken"),
             );
 
             if (emailError) {
@@ -336,7 +338,7 @@ export default function StudentApplicationForm({
         alert(
           `Failed to submit application: ${
             error instanceof Error ? error.message : "Unknown error"
-          }`
+          }`,
         );
       }
     }
@@ -416,11 +418,6 @@ export default function StudentApplicationForm({
                                   >
                                     <span className="inline-flex flex-wrap items-baseline gap-x-1.5">
                                       <span>{program.name}</span>
-                                      {program.is_thesis && (
-                                        <span className="text-muted-foreground">
-                                          – {program.is_thesis}
-                                        </span>
-                                      )}
                                       {program.price_per_year != null && (
                                         <span className="text-muted-foreground">
                                           – €{program.price_per_year}/year
@@ -791,7 +788,7 @@ export default function StudentApplicationForm({
                         />
                       </>
                     )}
-                    {degreeType === DegreeType.Master && (
+                    {(degreeType === DegreeType.Master || degreeType === DegreeType.MasterWithoutThesis) && (
                       <>
                         <FormField
                           control={form.control}
