@@ -21,7 +21,7 @@ const seoData: Record<
     keywords: [
       "BSMU",
       "bsmu",
-      "bsmu.edu.rs",
+      "bsmu.org",
       "Balkan Science and Management University",
       "study in Serbia",
       "international university",
@@ -43,7 +43,7 @@ const seoData: Record<
     keywords: [
       "BSMU",
       "bsmu",
-      "bsmu.edu.rs",
+      "bsmu.org",
       "Балканский Университет Науки и Управления",
       "Образование в Сербии",
       "Обучение в Сербии",
@@ -64,7 +64,7 @@ const seoData: Record<
     keywords: [
       "BSMU",
       "bsmu",
-      "bsmu.edu.rs",
+      "bsmu.org",
       "Balkan Bilim ve Yönetim Üniversitesi",
       "Sırbistan'da eğitim",
       "Sırbistan'da okumak",
@@ -87,7 +87,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const seo = seoData[locale] || seoData.en;
-  const baseUrl = "https://bsmu.edu.rs";
+  const baseUrl = "https://bsmu.org";
   const ogLocale = locale === "ru" ? "ru_RU" : locale === "tr" ? "tr_TR" : "en_US";
   const alternateLocales = ["en_US", "ru_RU", "tr_TR"].filter((l) => l !== ogLocale);
 

@@ -12,9 +12,9 @@ const contactInfo = {
     hours: "Mon-Fri: 9:00 AM - 6:00 PM",
   },
   email: {
-    primary: "info@bsmu.edu.rs",
-    admissions: "international@bsmu.edu.rs",
-    support: "rectorate@bsmu.edu.rs",
+    primary: "info@bsmu.org",
+    admissions: "international@bsmu.org",
+    support: "rectorate@bsmu.org",
   },
   address: {
     city: "Jurija Gagarina 12, 11070, Beograd, Serbia",

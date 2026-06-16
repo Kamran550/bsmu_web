@@ -11,7 +11,7 @@ const contactInfo = {
     belgium: "+32 483 38 31 70",
     turkey: "+90 505 621 26 26",
   },
-  email: "info@bsmu.edu.rs",
+  email: "info@bsmu.org",
   address: "Jurija Gagarina 12, 11070, Beograd, Serbia",
 };
 

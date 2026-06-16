@@ -5,21 +5,21 @@ export function OrganizationJsonLd() {
   const organizationData = {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
-    "@id": "https://bsmu.edu.rs/#organization",
+    "@id": "https://bsmu.org/#organization",
     name: "Balkan Science and Management University",
     alternateName: [
       "BSMU",
       "Балканский Университет Науки и Управления",
       "Balkan Science and Management University",
     ],
-    url: "https://bsmu.edu.rs",
+    url: "https://bsmu.org",
     logo: {
       "@type": "ImageObject",
-      url: "https://bsmu.edu.rs/images/BSMU-logo-dark.png",
+      url: "https://bsmu.org/images/BSMU-logo-dark.png",
       width: 512,
       height: 512,
     },
-    image: "https://bsmu.edu.rs/images/BSMU-logo-dark.png",
+    image: "https://bsmu.org/images/BSMU-logo-dark.png",
     description:
       "Balkan Science and Management University (BSMU) - International education in Serbia with bachelor's, master's and PhD programs. Quality education through science and management.",
     address: {
@@ -56,8 +56,8 @@ export function UniversityJsonLd() {
     "@type": "CollegeOrUniversity",
     name: "Balkan Science and Management University",
     alternateName: "BSMU",
-    url: "https://bsmu.edu.rs",
-    logo: "https://bsmu.edu.rs/images/BSMU-logo-dark.png",
+    url: "https://bsmu.org",
+    logo: "https://bsmu.org/images/BSMU-logo-dark.png",
     description:
       "BSMU offers international bachelor's, master's and PhD programs in Serbia. Fostering science and management through education and global understanding.",
     address: {
@@ -101,20 +101,20 @@ export function WebsiteJsonLd() {
   const websiteData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "@id": "https://bsmu.edu.rs/#website",
-    url: "https://bsmu.edu.rs",
+    "@id": "https://bsmu.org/#website",
+    url: "https://bsmu.org",
     name: "BSMU - Balkan Science and Management University",
     alternateName: ["BSMU", "Balkan Science and Management University"],
     description: "Official website of Balkan Science and Management University",
     publisher: {
-      "@id": "https://bsmu.edu.rs/#organization",
+      "@id": "https://bsmu.org/#organization",
     },
     inLanguage: ["en", "tr", "ru"],
     potentialAction: {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: "https://bsmu.edu.rs/search?q={search_term_string}",
+        urlTemplate: "https://bsmu.org/search?q={search_term_string}",
       },
       "query-input": "required name=search_term_string",
     },

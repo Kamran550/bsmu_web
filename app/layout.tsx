@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   keywords: [
     "BSMU",
     "bsmu",
-    "bsmu.edu.rs",
+    "bsmu.org",
     "Balkan Science and Management University",
     "Serbia university",
     "Serbian university",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Balkan Science and Management University",
-      url: "https://bsmu.edu.rs",
+      url: "https://bsmu.org",
     },
   ],
   creator: "Balkan Science and Management University",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   },
 
   // Canonical URL
-  metadataBase: new URL("https://bsmu.edu.rs"),
+  metadataBase: new URL("https://bsmu.org"),
   alternates: {
     canonical: "/",
     languages: {
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     alternateLocale: ["ru_RU", "tr_TR"],
-    url: "https://bsmu.edu.rs",
+    url: "https://bsmu.org",
     siteName: "Balkan Science and Management University",
     title: "Balkan Science and Management University | Study in Serbia",
     description:

@@ -204,7 +204,7 @@
         "description": "Prof. Dr. Eraytun Koralmaz is a distinguished academic with extensive experience in the field of higher education and institutional leadership. Throughout his career, he has actively contributed to academic development, participated in national and international projects, and published in respected journals within his area of expertise. Before his appointment as Rector, Prof. Dr. Koralmaz held various academic and administrative positions, including lecturer, department head, and vice-rector. His professional journey reflects a strong commitment to academic excellence, innovation, and effective university governance.",
         "qualifications": "As the Rector of Balkan Science and Management University, he envisions a modern, globally connected institution that prioritizes quality education, international partnerships, student-centered learning, and continuous development of academic staff. Prof. Dr. Koralmaz is dedicated to fostering an inclusive, transparent, and forward-thinking academic environment that prepares students for the challenges of the future.",
         "email": "Email",
-        "emailValue": "eraytun.koralmaz@bsmu.edu.rs"
+        "emailValue": "eraytun.koralmaz@bsmu.org"
       },
       "welcomeMessage": {
         "title": "Welcome Message from the Rector",
@@ -228,22 +228,22 @@
       "viceRector": {
         "position": "Vice Rector",
         "name": "Prof Dr. Damjan Krelov",
-        "email": "damjan.krelov@bsmu.edu.rs"
+        "email": "damjan.krelov@bsmu.org"
       },
       "rectorAdvisor": {
         "position": "Rector Advisor",
         "name": "Prof. Dr. Elira Kostanova",
-        "email": "elira.kostanova@bsmu.edu.rs"
+        "email": "elira.kostanova@bsmu.org"
       },
       "secretaryGeneral": {
         "position": "Secretary General",
         "name": "Dr. Jovik Terzan",
-        "email": "jovik.terzan@bsmu.edu.rs"
+        "email": "jovik.terzan@bsmu.org"
       },
       "officeDirector": {
         "position": "Director of International Office",
         "name": "Berilay Korhan",
-        "email": "berilay.korhan@bsmu.edu.rs"
+        "email": "berilay.korhan@bsmu.org"
       }
     }
   },

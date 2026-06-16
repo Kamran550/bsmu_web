@@ -204,7 +204,7 @@
         "description": "Prof. Dr. Eraytun Koralmaz, yükseköğretim ve kurumsal liderlik alanında geniş deneyime sahip seçkin bir akademisyendir. Kariyeri boyunca akademik gelişime aktif olarak katkıda bulunmuş, ulusal ve uluslararası projelerde yer almış ve uzmanlık alanındaki saygın dergilerde yayınlar yapmıştır. Rektör olarak atanmadan önce Prof. Dr. Koralmaz, öğretim görevlisi, bölüm başkanı ve rektör yardımcısı da dahil olmak üzere çeşitli akademik ve idari görevlerde bulunmuştur. Mesleki yolculuğu, akademik mükemmelliğe, yeniliğe ve etkili üniversite yönetimine olan güçlü bağlılığını yansıtmaktadır.",
         "qualifications": "Balkan Bilim ve Yönetim Üniversitesi Rektörü olarak, kaliteli eğitime, uluslararası ortaklıklara, öğrenci merkezli öğrenmeye ve akademik kadronun sürekli gelişimine öncelik veren modern, küresel bağlantılı bir kurum hayal etmektedir. Prof. Dr. Koralmaz, öğrencileri geleceğin zorluklarına hazırlayan kapsayıcı, şeffaf ve ileri görüşlü bir akademik ortam oluşturmaya kendini adamıştır.",
         "email": "E-posta",
-        "emailValue": "eraytun.koralmaz@bsmu.edu.rs"
+        "emailValue": "eraytun.koralmaz@bsmu.org"
       },
       "welcomeMessage": {
         "title": "Rektörden Hoş Geldiniz Mesajı",
@@ -228,22 +228,22 @@
       "viceRector": {
         "position": "Rektör Yardımcısı",
         "name": "Prof Dr. Damjan Krelov",
-        "email": "damjan.krelov@bsmu.edu.rs"
+        "email": "damjan.krelov@bsmu.org"
       },
       "rectorAdvisor": {
         "position": "Rektör Danışmanı",
         "name": "Dr. Elira Kostanova",
-        "email": "elira.kostanova@bsmu.edu.rs"
+        "email": "elira.kostanova@bsmu.org"
       },
       "secretaryGeneral": {
         "position": "Genel Sekreter",
         "name": "Dr. Jovik Terzan",
-        "email": "jovik.terzan@bsmu.edu.rs"
+        "email": "jovik.terzan@bsmu.org"
       },
       "officeDirector": {
         "position": "Uluslararası Ofis Müdürü",
         "name": "Berilay Korhan",
-        "email": "berilay.korhan@bsmu.edu.rs"
+        "email": "berilay.korhan@bsmu.org"
       }
     }
   },
