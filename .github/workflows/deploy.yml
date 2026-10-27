@@ -1,0 +1,111 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+env:
+  # pm2 prosesinin adı və port (ecosystem.config.js ilə eyni olmalıdır)
+  APP_NAME: bsmu-next
+  APP_PORT: 3002
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/cache@v4
+        with:
+          path: .next/cache
+          key: nextjs-${{ hashFiles('package-lock.json') }}-${{ github.sha }}
+          restore-keys: nextjs-${{ hashFiles('package-lock.json') }}-
+
+      - run: npm ci
+
+      # Backend ünvanı .env.production faylından gəlir (next build onu özü oxuyur)
+      - run: npm run build
+
+      # Standalone build: server.js + lazım olan node_modules; static və public ayrıca kopyalanmalıdır
+      - name: Package standalone build
+        run: |
+          rm -rf release && mkdir release
+          cp -a .next/standalone/. release/
+          cp -a .next/static release/.next/static
+          cp -a public release/public
+          cp ecosystem.config.js release/
+          tar -czf deploy.tgz -C release .
+
+      - name: Deploy to server
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          APP_DIR: ${{ secrets.APP_DIR }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_deploy
+          chmod 600 ~/.ssh/id_deploy
+          SSH_OPTS="-i $HOME/.ssh/id_deploy -o StrictHostKeyChecking=accept-new"
+
+          RELEASE="$(date -u +%Y%m%d%H%M%S)-${GITHUB_SHA::7}"
+
+          scp $SSH_OPTS deploy.tgz "$SSH_USER@$SSH_HOST:/tmp/deploy-$APP_NAME.tgz"
+
+          # Serverdə: releases/<ad> qovluğuna açılır, current symlink-i ona yönəlir; uğursuz olsa əvvəlki release-ə qaytarılır
+          ssh $SSH_OPTS "$SSH_USER@$SSH_HOST" bash -s -- "$APP_DIR" "$RELEASE" "$APP_NAME" "$APP_PORT" <<'EOF'
+          set -e
+          cd "$1"
+          RELEASE="$2"
+          APP_NAME="$3"
+          APP_PORT="$4"
+
+          mkdir -p "releases/$RELEASE"
+          tar -xzf "/tmp/deploy-$APP_NAME.tgz" -C "releases/$RELEASE"
+          rm -f "/tmp/deploy-$APP_NAME.tgz"
+
+          PREV="$(readlink current 2>/dev/null || true)"
+
+          start_app() {
+            ln -sfn "$1" current
+            pm2 delete "$APP_NAME" >/dev/null 2>&1 || true
+            pm2 start "$PWD/current/ecosystem.config.js"
+          }
+
+          start_app "releases/$RELEASE"
+
+          for i in $(seq 1 30); do
+            sleep 2
+            code=$(curl -s -o /dev/null -w '%{http_code}' "http://127.0.0.1:$APP_PORT/" || true)
+            case "$code" in 2*|3*)
+              echo "Health OK ($code)"
+              pm2 save
+              # Son 3 release saxlanılır
+              ls -1d releases/*/ | sort | head -n -3 | xargs -r rm -rf
+              exit 0 ;;
+            esac
+          done
+
+          echo "Health check uğursuz oldu"
+          if [ -n "$PREV" ] && [ -d "$PREV" ]; then
+            echo "Əvvəlki release bərpa olunur: $PREV"
+            start_app "$PREV"
+            pm2 save
+          fi
+          rm -rf "releases/$RELEASE"
+          exit 1
+          EOF
+
+      - if: always()
+        run: rm -f ~/.ssh/id_deploy
